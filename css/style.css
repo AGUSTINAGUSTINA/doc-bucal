@@ -1,0 +1,2322 @@
+/*Fuentes importadas*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&display=swap');
+
+/* Reset de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.titillium-web-extralight {
+  font-family: "Titillium Web", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.titillium-web-light {
+  font-family: "Titillium Web", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.titillium-web-regular {
+  font-family: "Titillium Web", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.titillium-web-bold {
+  font-family: "Titillium Web", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.titillium-web-black {
+  font-family: "Titillium Web", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.titillium-web-extralight-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.titillium-web-light-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.titillium-web-regular-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.titillium-web-semibold-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.titillium-web-bold-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+.public-sans-semibold{
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.public-sans-light{
+  font-family: "Public Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* PALETA DE COLORES:
+Primario: #213555
+        : #B7C4DA
+Secundario: #F6F1EE
+          : #D8C4B6 
+Acento: C98A62
+ */
+
+ /* COLORES BACKGROUND:
+Azul oscuro:  #213555
+Beige: #D8C4B6
+Blanco: #FFFFFF
+Celeste grisáceo: #B7C4DA
+ */
+
+ /* COLORES TEXTO:
+Azul oscuro:  #213555
+Negro: #222233
+Blanco: #FFFFFF
+ */
+
+ /* COLORES Indicadores:
+Error (rojo):  #DB1318
+Alerta (amarillo): #FBBA06
+Correcto (verde): #00A272
+ */
+
+ /* Estilos de los H: se utilizó Titillium Web y para remarcar, se utilizó strong en html.
+Para darle mayor peso (grosor) y presencia a la tipografía, se han asignado distintos valores a la propiedad font-weight, de la siguiente manera:
+ h1: bold (700)
+ h2: bold (700)
+ h3: semibold (600) 
+ h4: bold (700)*/
+
+h1,h2,h3,h4 {
+  font-family: "Titillium Web", serif;
+}
+p{
+  font-family: 'Public Sans', sans-serif; 
+}
+ h1{
+  font-family:"Titillium Web", serif; 
+  font-weight: 700;
+  font-size: 52px;
+  font-style: normal; 
+  color: #213555; 
+}
+h2 {
+  font-family:"Titillium Web", serif; 
+  font-weight: 700; 
+  font-style: normal; 
+  color: #213555; 
+  font-size: 42px;  
+}
+h3 {
+  font-family:"Titillium Web", serif; 
+  font-style: normal; 
+  color: #213555; 
+  font-weight: 600;
+  font-size: 32px; 
+}
+h4{
+ font-family:"Titillium Web", serif; 
+ font-weight: 700; 
+ font-style: normal; 
+ color: #213555; 
+ font-size: 22px; 
+}
+  
+  
+  /* Estilos de los P: se utilizó Public Sans con el font-weight light: 300  */
+p{
+  font-family: 'Public Sans', sans-serif; 
+  color: #213555; 
+  font-weight: 300; 
+  font-size: 18px;
+}
+  
+
+
+
+
+/*BARRA AZUL*/
+
+/* Estilo de la Barra azul superior que contiene el ícono de ubicacion con la dirección de le establecimiento y el ícono de telefono con el telefono */
+/*Pimero se definieron las propiedades de la barra */
+/*Se utilizó:
+display : flex para definir un contenedor, así, los elementos dentro de ese contenedor se organizan de manera que se puedan alinear, distribuir y justificar con mayor facilidad (los elementos hijos se organizan en una fila o columna)
+justify-content: center para centrar los elementos dentro de un contenedor
+gap: para definir el espacio entre los elementos dentro de un contenedor
+padding: para crear un espacio interno entre el contenido y su borde, sin afectar el tamaño total del contenedor*/
+.franja_superior {
+  display: flex;
+  justify-content: center; 
+  gap: 18px;
+  padding: 10px 20px;
+  background-color: #213555; 
+}
+
+.localizacion {
+  font-family: "Public Sans", sans-serif;
+  color: white;
+  font-size: 16px;
+}
+.num_telefono {
+  font-family: "Public Sans", sans-serif;
+  color: white;
+  font-size: 16px;
+}
+.horario {
+  font-family: "Public Sans", sans-serif;
+  color: #213555;
+  font-size: 16px;
+}
+
+/*Luego se definieron las propiedades de los class location (dirección) y phone (teléfono). 
+Se volvió a utilizar display:flex para poder aplicar más configuraciones los elementos dentro de la franja y distribuirlos de manera independiente dentro del contenedor de la franja azul.
+Además se utilizó align-items: center para que los elementos se colocaquen de manera que queden centrados en relación con el contenedor.
+*/
+.location, .phone {
+  display: flex;
+  align-items: center; 
+  color: white; 
+}
+/*Y por último, se definieron las propiedades de los íconos
+Se utilizó:
+"width" para el tamaño del ícono
+"hight: auto" para mantener la proporción del ícono
+"margin-right" para el espacio entr el ícono y el texto. */
+.icon {
+  width: 20px; 
+  height: auto; 
+  margin-right: 10px; 
+}
+
+
+
+
+/*BARRA GRIS*/
+
+/* Se repitió el procedimiento para la barra inferior celeste grisácea */
+.franja_inferior {
+  display: flex;
+  justify-content: center; 
+  padding: 10px 20px; 
+  background-color: #B7C4DA; 
+}
+
+.hours {
+  display: flex;
+  align-items: center;
+  color: #213555; 
+}
+.icon {
+  width: 20px; 
+  height: auto; 
+  margin-right: 10px; 
+}
+
+/* whatsapp*/
+.floating-whatsapp {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 9999 !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+  border-radius: 50%; 
+  display: inline-block; 
+}
+
+.floating-whatsapp img {
+  border-radius: 50%; 
+  width: 50px; 
+  height: 50px; 
+  display: block; 
+  object-fit: cover; 
+}
+
+
+
+/* BARRA DE NAVEGACIÓN*/
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-collapse .nav-link-boton-turnos {
+  background-color: #213555;
+  font-family: "Public Sans", sans-serif;
+  width: 105px;
+  height: 36px ;
+  padding: 8px 20px;
+  border-radius: 19px ;
+  color: white;
+  text-decoration: none;
+  justify-self: center;
+  align-items: center;
+  
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+  background-color: transparent; /* Evita que se cambie el fondo */
+}
+
+.navbar-nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: white; /* Fondo blanco para los enlaces */
+  border-radius: 10px; /* Opcional, para redondear las esquinas */
+  padding: 10px 0; /* Espaciado entre los enlaces */
+  position: relative;
+  z-index: 2; /* Asegura que los enlaces estén por encima del fondo con blur */
+}
+navbar-toggler.navbar-collapse.show {
+  position: fixed;
+  z-index: 1050; /* Asegura que el menú esté encima de otros elementos */
+  width: 100%;
+  backdrop-filter: blur(10px); /* Aplica el blur al fondo completo */
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente */
+  position: relative; /* Asegura que el backdrop-filter se aplique correctamente */
+  border: none;
+  
+  }
+  
+
+.navbar-nav li {
+  margin-left: 10px;
+}
+
+.navbar-nav li a {
+  background-color: white;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #213555;
+  text-decoration: none;
+  border-radius: 19px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.navbar-nav li a:hover {
+  background-color: #B7C4DA;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  border-radius: 19px ;
+  font-weight: bold;
+  color: #213555;
+  text-decoration: none;
+  border-color: solid #B7C4DA;
+  padding: 8px 20px;
+}
+
+.navbar-collapse nav li a:hover{
+  background-color: #B7C4DA;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  border-radius: 19px;
+  font-weight: bold;
+  color: #213555;
+  text-decoration: none;
+  border-color: solid #B7C4DA;
+  padding: 8px 20px;
+  width: 185px;
+}
+
+
+
+.nav-link-boton-turnos {
+  background-color: #213555;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  border-radius: 19px ;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-color: #213555;
+  align-items: center; 
+  justify-content: center;
+}
+
+.nav-link-boton-turnos:hover {
+  background-color: #B7C4DA;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  border-radius: 19px ;
+  font-weight: bold;
+  color: #213555;
+  text-decoration: none;
+  border-color: solid #213555 ;
+  
+}
+
+
+
+.custom-navbar {
+  border-bottom: none; 
+}
+
+/* LOGO PRINCIPAL */
+.logo_container {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 40%;
+  max-width: 100%;
+}
+
+.logo_container .logo_navbar {
+  margin-right: 10px;
+  width: auto; 
+  height: auto ;
+  max-width: 100% ;
+  align-self: flex-start;
+}
+
+.logo_subtitle {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1rem;
+  color: #213555;
+  font-weight: normal;
+  margin: 0%;
+  padding: 0%;
+  display: inline-block;
+  font-weight: bold;
+}
+
+
+
+
+/*IMAGEN CONTAINER*/
+
+
+/* Para la imagen de fondo se creó un contenedor, ya que dentro de la imagen, va un h1, p y botones.
+Se utilizó 
+"background-repeat: no-repeat" para que la imagen no se repita
+"background-position: center center para que este centrada vertical y horizontalmente" 
+*/
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-caption-custom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: white;
+  width: 80%;
+  max-width: 600px;
+}
+
+.carousel-caption-custom h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+.carousel-caption-custom p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: white;
+  text-align: left;
+}
+
+.carousel-caption-custom.nuestro_servicios {
+  margin: 5px;
+}
+
+.carousel-caption-custom.num_tel
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* Personalización de los botones del carrusel sin modificar Bootstrap directamente */
+button.previo,
+button.siguiente {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  z-index: 2;
+  width: 36px;
+  height: 36px;
+}
+
+/* Más cerca del borde izquierdo */
+button.previo {
+  left: 15px;
+}
+
+/* Más cerca del borde derecho */
+button.siguiente {
+  right: 15px;
+}
+
+
+
+/* Opcional: achicar los botones si ocupan mucho espacio */
+button.previo .custom,
+button.siguiente .custom {
+  width: 30px;
+  height: 30px;
+  background-size: 100% 100%;
+}
+
+
+#agenda {
+  font-family: "Public Sans", sans-serif;;
+  width: 200px; 
+  height: 42px;
+  font-size: 16px; 
+  border-radius: 19px;
+  background-color: #213555;
+  color: white;
+}
+#agenda:hover{
+  background-color: #B7C4DA;
+  color: #213555;
+  border: 2px solid #213555; 
+}
+#conoce_mas {
+  font-family: "Public Sans", sans-serif;;
+  width: 200px; 
+  height: 42px;
+  font-size: 16px; 
+  border-radius: 19px;
+  background-color: #213555;
+  color: white;
+}
+#conoce_mas:hover{
+  background-color: #B7C4DA;
+  color: #213555;
+  border: 2px solid #213555; 
+}
+
+
+/* En el contenedor de botones se utilizaron las siguiente propiedades:
+display: flex para que  los botones queden uno al lado del otro
+gap: para el espacio entre los botones
+
+*/
+.botones_container {
+  display: flex; 
+  gap: 15px; 
+  justify-content: start; 
+  align-items: center; 
+}
+
+  
+/* Al h1 se le dieron las siguiente propiedades y valores
+y se utilizó margin-bottom para los pixeles de separación entre el título y el párrafo.
+Además para el tamaño de la fuente se utilizó 2.5 veces el tamaño de la fuente raíz (2.5rem), ya que esto
+permite rem permite obtener un diseño más felixble.
+*/
+#todas_las_especialidades {
+font-family: "Titillium Web", serif;
+font-size: 2.5rem; 
+font-weight: bold;
+margin-bottom: 10px; 
+color: white;
+}
+  
+/* Para el párrafo debajo del título, se utilizó 1,2 veces el tamaño de la fuente raiz  (1,2rem)
+y se estableció un margen de 20px en relación al borde inferior del contenedor */
+#servicios_agenda_turno {
+font-size: 1.2rem; 
+justify-content: start; 
+text-align: left;
+margin-bottom: 20px; 
+color: white;
+
+}
+
+/* Botón */
+button {
+font-family: "Public Sans", sans-serif;;
+font-weight: bold;
+width: 105px; 
+height: 36px; 
+background-color: #213555; 
+color: white; 
+border: none;
+border-radius: 18px;
+cursor: pointer;
+transition: background-color 0.3s, color 0.3s; 
+}
+
+
+/* Hover para que el botón cambie de color al pasar el cursor sobre él */
+button:hover {
+background-color: #B7C4DA; 
+color: #213555; 
+}
+
+/* Estilo botón "Nuestros servicios" */
+#nuestros_servicios {
+font-family: "Public Sans", sans-serif;;
+width: 200px; 
+height: 42px;
+font-size: 16px; 
+border-radius: 19px;
+border: 2px solid white;
+background-color: #213555;
+color: white;
+
+}
+
+/* Hover para el botón "Nuestros servicios": se estableció que al pasar el cursor sobre el botón no solo
+cambie el color de fondo y de la fuente sino también que se agregue un borde azul con la propiedad border: 2px */
+#nuestros_servicios:hover {
+background-color: #B7C4DA;
+color: #213555;
+border: 2px solid #213555; 
+}
+
+/* Estilo del botón "Número de teléfono": Para distinguir este botón y resaltar que se trata de una acción diferente, 
+se le aplicó un fondo transparente junto con un borde blanco, lo que contribuye a su visibilidad y diferenciación en la interfaz. */
+#num_tel {
+width: 200px; 
+height: 42px; 
+background-color: transparent;
+color: white;
+display: flex;
+align-items: center; 
+justify-content: center; 
+font-size: 16px;
+font-family: "Public Sans", sans-serif;
+font-weight: bold;
+padding: 10px 15px;
+border-radius: 18px;
+border: 2px solid white; 
+gap: 10px; 
+}
+
+/* Imagen de un telefono dentro del botón "Número de teléfono" */
+#num_tel img {
+width: 20px; 
+height: auto; 
+}
+
+
+/* Estilo hover para el botón "Número de teléfono": también se estableció un hover difente al otro botón */
+#num_tel:hover {
+background-color: #213555;
+color: white;
+}
+
+
+/* Centrado de h1 y p */
+section {
+  text-align: start;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: left;
+}
+
+
+/* Se incorporó un mensaje de bienvenida con el fin de generar una sensación de cercanía y calidez. */
+.bienvenida {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.bienvenida h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #213555;
+  font-weight: bold;
+  margin-top: 5px;
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.42);
+}
+
+.bienvenida p {
+  font-size: 1.2rem;
+  color: #213555;
+  max-width: 800px;
+  margin: 0 auto; 
+  margin-bottom: 20;
+  margin-top: 20px;
+}
+
+
+/*CARDS*/
+
+
+/* Contenedor principal de las divs */
+.info_container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 18px;
+  margin-bottom: 20px;
+}
+
+/* Para el contenedor que agrupa todas las divs de información, se aplicaron las siguiente propiedades:
+justify-content: space-between; para alinear las divs de manera horizontal 
+gap: para generar un espacio entre las divs 
+wrap: wrap para que pueda aplicarse el responsive */
+.info {
+  display: flex;
+  justify-content: space-between; 
+  gap: 1px; 
+  flex-wrap: wrap; 
+  align-items: center; 
+  margin-top: 20px;
+}
+
+/* Para el estilo de las divs internas:
+  se utilizó flex: 1 para que las divs ocupen el mismo espacio
+  min-width: 250px: para evitar que las divs se hagan demasiado pequeñas */
+.experiencia, .consultas, .os, .staff {
+  flex: 1; 
+  min-width: 250px; 
+  max-width: 30%; 
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 250px;
+  display: flex;  
+  flex-direction: column;  
+  justify-content: center;  
+  align-items: center;  
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Titillium Web", serif;
+  margin-bottom: 10px;
+  font-weight: bold; 
+}
+ .num {
+  font-size: 70px; 
+  font-family:  "Public Sans", sans-serif;
+  font-weight: bold;
+  color: #213555; 
+  display: block; 
+  text-align: center; 
+ }
+ .dato {
+  font-size: 18px; 
+  font-family:  "Public Sans", sans-serif;
+  font-weight: bold;
+  color: #213555; 
+  display: block; 
+  text-align: center; 
+}
+h4 {
+  font-size: 2.5rem;
+  color: #213555;
+  font-weight: bold;
+}
+
+
+
+
+/*PREGUNTAS FRECUENTES*/
+
+
+/*Sección preguntas frecuentes: Para esta sección se utilizó la propiedad "display: block" 
+para que el contenedor de .preguntas cubra todo el espacio horizontal disponible y además
+se apilen uno debajo del otro.
+*/
+
+.faq_container{
+  max-width: 800px; /* Limita el ancho máximo en pantallas grandes */
+  width: 100%; /* Se adapta al tamaño de la pantalla */
+  margin: 0 auto; /* Centra el contenido */
+  padding: 20px; /* Añade espaciado interno */
+}
+
+.faq_title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Titillium Web", serif;
+  color: #213555;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.42);
+  margin-left: auto;
+  margin-right: auto; /* Centra el elemento si es block */
+}
+
+.faq_accordion {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  margin: 0 auto; /* Centra si hay espacio sobrante */
+  padding: 0 15px;
+}
+
+.faq_item {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.accordion-header{
+  width: 100%;
+}
+
+/* Estilo de cada pregunta (botón del acordeón) */
+.faq_button {
+  background-color: #B7C4DA;
+  color: #213555;
+  font-weight: bold;
+  font-family: "Titillium Web", serif;
+  width: 100% !important;
+  box-sizing: border-box; /* Asegura que padding/border no aumenten el tamaño */
+  white-space: normal;
+}
+
+
+
+.faq_button:not(.collapsed) {
+  background-color: #B7C4DA;
+  color: #213555;
+  font-family: "Titillium Web", serif;
+}
+
+.faq_button:focus,
+.faq_button:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Estilo del contenido del acordeón */
+.faq_body {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  font-family:  "Public Sans", sans-serif;
+}
+
+.resaltado {
+  font-weight: bold;
+  font-family:  "Public Sans", sans-serif;
+}
+
+.contenedor_boton_faq {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ver_mas_faq {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 50px; /* Asegura suficiente altura */
+  padding: 10px 20px; /* Ajusta el espaciado interno */
+  font-size: 1rem;
+  background-color: transparent;
+  color: #213555;
+  border: 2px solid #213555;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+.ver_mas_faq :hover{
+  color: #213555;
+  border: 2px solid #213555;
+  background-color: #B7C4DA;
+}
+
+
+
+/*FOOTER*/
+
+
+/* Estilo para el footer: se le aplicaron las siguientes propiedades para lograr lo siguiente:
+"flex-direction: column" para apilar los elementos 
+"position: relative": para que quede abajo del contenido 
+*/
+footer {
+  background-color: #D8C4B6; 
+  color: #213555; 
+  text-align: left; 
+  display: flex;
+  flex-direction: column; 
+  padding: 20px; 
+  width: 100%; 
+  position: relative; 
+}
+/*Para el footer se creó un sección con divisiones. Se utilizó::
+"flex-wrap: nowrap": para evitar que los elementos se acomoden en una nueva fila y quede solo el texto debajo.
+*/
+footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  flex-wrap: nowrap; 
+  gap: 20px; 
+}
+/*Cada division del footer ocupa el 22% del ancho
+con "margin" se establecen espacios entra las divisiones, con "flex-direction: column" se alinea el contenido de la div
+en una columna y con "align-items: flex-start" se alinea el contenido de la div a la izquierda*/
+footer section div {
+  flex: 1 1 22%; 
+  margin: 20px; 
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+
+footer section .bienestar {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+footer section .bienestar img {
+  max-width: 150px;
+  height: 350px;
+  width: 350px;
+  align-items: center; 
+}
+.logo_subtitle_footer {
+  text-align: left;
+  align-items: flex-start; 
+  margin-left: 0px;
+  margin-top: 20px; 
+  font-size: 1rem;
+  color: #213555; 
+  display: block;
+  margin-bottom: 0;
+  flex-basis: 100%; 
+  font-weight: bold;
+}
+
+footer section div h2{
+  text-align: center; 
+  font-weight: normal;
+}
+
+.footer_contacto {
+  text-align: left;
+  color: #213555; 
+  display: block;
+  margin-bottom: 0; 
+}
+
+footer p {
+  text-align: left;
+  margin-top: 20px; 
+  font-size: 1rem;
+  color: #213555; 
+  display: block;
+  margin-bottom: 0;
+
+}
+
+.mapa-container {
+  width: 200px;
+  height: 150px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mapa-ubicacion {
+  width: 100%;
+  height: 100%;
+}
+/*Para que el p ocupe toda la linea de ancho y se coloque en una nueva linea al final, se utilizó " flex-basis: 100%"*/
+footer p.footer_derechos_reservados {
+  text-align: left;
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #213555;
+  margin-bottom: 0; 
+  flex-basis: 100%; 
+}
+
+
+
+
+/* Esto pertenece al css de la página sobre nosotros */
+
+/* Sección sobre nosotros */
+
+/* Contenedor principal de texto e imagen */
+.content_container {
+display: flex;
+justify-content: space-between;
+align-items: right;
+margin-bottom: 40px;
+}
+
+.text {
+  width: 50%;
+}
+
+.text h1 {
+  font-size: 3rem;
+  color: #213555;
+  margin-bottom: 10px;
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.42);
+
+}
+.text h2 {
+  color: #213555;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.text p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.img_sobre_nosotros {
+  width: 40%;
+  display: block;
+}
+
+.img_sobre_nosotros img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+ 
+}
+
+/* Se creó otra Sección denominada equipo */
+.equipo {
+  text-align: left;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.equipo h2 {
+  font-size: 2rem;
+  color: #213555;
+  margin-bottom: 20px;
+}
+
+.nuestro_equipo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: nowrap;
+  width: 100%;  
+  margin: 10px;
+}
+
+
+/* Dentro de esta sección, se estructuraron cuatro cards, cada una con la imagen del profesional, 
+su nombre y su especialidad. 
+Se utilizó "height: auto" para que el contenedor se ajuste al contenido 
+dentro del background se utilizó "!important" para refozarla propiedad, ya que dentro del css hay otras cards.
+Además de utilizó "box-shadow" para darle un sombreado a la card.
+Se estableció el siguiente estilo general de cada card.
+ */
+.card {
+  width: 290px;
+  height: 330px;  
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 400px; 
+  cursor: pointer;
+}
+
+
+/* propiedades de la imagen del profesional dentro de la card */
+.card img {
+  width: 202px !important; 
+  height: 202px !important;
+  object-fit: cover; 
+  display: block;
+}
+
+/* Estilo del contenido dentro de la card */
+.card-body {
+  padding: 15px;
+  background-color: white;
+}
+
+.card-body .nombre {
+  font-size: 1.2rem;
+  color: #213555;
+  font-weight: bold; 
+  margin-bottom: 10px;
+}
+
+.card-body .especialidad {
+  font-size: 1rem;
+  color: #555;
+  text-transform: uppercase; 
+  font-weight: normal; 
+}
+
+
+
+
+
+/* Este es css de turnos */
+
+.agendamos_turno {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: nowrap; 
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Contenedor de la información de contacto alineado a la izquierda */
+.agendamos_turno .info_contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+
+/* Imagen de "Agendamos Turnos" alineada a la derecha (para que la imagen quede a la derecha, 
+se utilizó " justify-content: flex-end"*/ 
+.agendamos_turno .img_turno {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  align-items: center;
+}
+
+.agendamos_turno .img_turno img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Para la alineación de los iconos junto al texto: se utilizó "flex-direction: row" */
+.vector_telefono, .vector_whatsapp, .vector_mail {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Ajuste del tamaño de los iconos */
+.vector_whatsapp img, .vector_mail img {
+  width: 45px;
+  height: 45px;
+}
+.vector_telefono img {
+  width: 30px;
+  height: 30px;
+}
+
+.info_contacto p {
+  margin-top: 10px; 
+  margin-bottom: 10px;  
+}
+
+
+
+
+/*Css del formulario*/
+/* Estilo  general para la sección con la imagen de fondo */
+#formulario {
+  position: relative;
+  background-image: url('../assets/img_back_contacto.png'); 
+  background-size: cover;
+  background-position: center;
+  height: 75vh; 
+  display: flex; 
+  align-items: flex-start; 
+  padding: 10px;
+  margin-bottom: 0%;
+}
+
+.titulo_form {
+  text-align: left; 
+  width: 38%; 
+  margin-right: 10px; 
+  color: white; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.titulo_form h1, 
+.titulo_form p {
+  margin: 0; 
+  color: white;
+  text-align: left; 
+  align-self: flex-start; 
+}
+
+
+form {
+  width: 52%; 
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+}
+
+
+#formulario label,
+#formulario p {
+  color: white; 
+  margin-top: 10px;
+  text-align: start;
+}
+
+#formulario h1,
+#formulario p,
+.titulo_form p {
+  color: white; 
+  text-align: start;
+}
+
+/* Colores para inputs y textarea */
+#formulario input, 
+#formulario select, 
+#formulario textarea {
+  color: #213555; 
+}
+
+
+input, select, textarea {
+  color: #213555; 
+}
+
+input, select, textarea {
+  width: 100%; 
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input_row_one, .input_row_two {
+  display: flex;
+  gap: 45px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input_group {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+}
+
+/* Ajustes al textarea para evitar que se redimensione */
+textarea {
+  resize: none;
+}
+/*Estilo para el boton Enviar */
+input[type="submit"] {
+  background-color: #213555;
+  color: white !important; 
+  font-weight: bold;
+  margin-top: 20px;
+  width: 105px; 
+  height: 36px; 
+  border-radius: 18px; 
+  border: none; 
+  cursor: pointer; 
+  font-size: 16px; 
+  text-align: center; 
+  display: inline-block; 
+  line-height: 36px; /* Centra verticalmente el texto */
+  padding: 0; /* Remueve el padding extra */
+  text-align: center; /* Centra el texto horizontalmente */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  line-height: normal; /* Evita que el texto se desplace*/
+}
+input[type="submit"]:hover {
+  background-color: #B7C4DA; 
+  color: #213555 !important;
+  border: #213555 solid;
+}
+
+
+
+
+
+/*Este es css de tratamientos*/
+
+
+
+
+/*Aquí utilicé Grid Layout, en el cual el área de la cuadrícula contiene 6 cards distribuidas en 3 columnas y 2 filas.*/
+
+
+/*Declaración del area de mi grid de la sección "Tratamientos"*/
+
+.tratamientos_section_grid {
+  display: grid; 
+  grid-template-areas: 
+  "card1   card2   card3"
+  "card4   card5   card6";
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, auto); 
+  gap: 15px; 
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/* card */
+.tratamientos_section_grid .card {
+  width: 100%; 
+  max-width: 330px; 
+  height: 330px; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+
+/* Imagenes de las cards */
+.tratamientos_section_grid .card img {
+  width: 100%; 
+  height: auto;
+  object-fit: cover; 
+  border-radius: 10px 10px 0 0; 
+}
+
+
+.tratamientos_section_grid .card h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #213555;
+  font-weight: bold;
+  font-family: "Public Sans", sans-serif;
+}
+
+
+/* El efecto hover se utilizó en este caso para resaltar el tratamiento a seleccionar.
+ Se logró utilizando transform: scale, lo que permite que, al pasar el cursor sobre la card, 
+esta aumente ligeramente su tamaño. En este caso, la escala aplicada es de 1.1 */
+
+.tratamientos_section_grid .card:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+
+
+/*Esto es del css de obras sociales*/
+
+/* Estilos generales */
+
+.text_os{
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos se apilen */
+  align-items: center; /* Centra horizontalmente los elementos */
+  max-width: 800px; /* Para evitar que el texto sea demasiado ancho en pantallas grandes */
+  margin: 0 auto; /* Centrar el contenedor en la página */
+}
+
+h1 {
+  color: #213555;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.42);
+  color: #213555;
+  margin:  0px 0px 10px;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 0px 0px 10px;
+}
+
+.p_negrita {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0px 0px 10px;
+}
+
+
+/* Contenedor principal de todo */
+.seccion_os {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas: 1 para los logos, 2 para los detalles */
+  gap: 30px; /* Espacio entre columnas */
+  margin: 40px 0;
+}
+
+/* Columna de logos de obras sociales */
+.logos_columna {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  grid-template-rows: repeat(3, 1fr) auto; /* Agrega una fila extra para el botón */
+  gap: 15px;
+  position: relative;
+  align-items: flex-start;
+  justify-items: center;
+}
+
+
+
+/* Cada logo individual */
+.logo_os img {
+  width: 65%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover; /* Asegura que la imagen se ajuste bien */
+}
+.button-container {
+  grid-column: 1 / span 2; /* Ocupa toda la fila en el grid */
+  display: flex;
+  justify-content: flex-start; /* Alinea a la izquierda en desktop */
+  width: 100%;
+  margin-left: 190px;
+  margin-top: 20px;
+}
+.boton_ver_mas {
+  display: flex;
+  justify-content: center; /* Centra el texto horizontalmente */
+  align-items: center; /* Centra el texto verticalmente */
+  padding: 15px 20px; /* Aumentamos el padding superior e inferior */
+  font-size: 1rem;
+  background-color: transparent;
+  color: #213555;
+  border: 2px solid #213555;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* El botón ocupará todo el ancho disponible */
+  max-width: 250px; /* Limita el ancho máximo */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del botón */
+}
+
+
+.boton_ver_mas:hover {
+  background-color: #B7C4DA;
+  color: #213555;
+}
+
+/* Columna de detalles (imagen y card) */
+.detalle_columna {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espacio entre la imagen y la tarjeta */
+}
+
+/* Imagen */
+.img_bucal {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 60px;
+}
+
+.img_bucal img {
+  max-width: 100%;
+  height: 214px;
+  width: 376;
+  border-radius: 8px;
+}
+
+/* Card con la información */
+.card_os {
+  background-color: #F6F1EE;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%; /* Aseguramos que ocupe todo el ancho disponible */
+  max-width: 400px; /* Limitar el tamaño de la card */
+  justify-content: center; /* Alineamos el contenido hacia la parte superior */
+  align-self: flex-end;
+  margin-right: 30px;
+}
+
+
+.card_os p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #213555;
+}
+
+/* Fila de información dentro de la card */
+.contenido_fila {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contenido_fila img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.contenido_fila p {
+  font-size: 1rem;
+  margin: 0;
+  color: #213555;
+}
+
+
+/*Esto es del css de reseñas*/
+
+/* Contenedor principal */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  justify-content: center
+}
+
+/* Estilo de cada card */
+.matias_card, .paz_cadr, .sebastian_card {
+  background-color: #F6F1EE;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px; 
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+/* Imagen estrellas */
+.matias_card img, .paz_cadr img, .sebastian_card img {
+  width: 100px; 
+  height: auto;
+}
+
+
+h2 {
+  font-size: 2rem;
+  color: #213555;
+  margin: 5px 0;
+}
+
+
+p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+.indicator_conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px; 
+  padding-bottom: 20px;
+  cursor: pointer; 
+}
+
+.ver_mas { 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 20px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #213555;
+  text-align: center;
+  border: 2px solid #213555;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ 
+
+.ver_mas:hover {
+  background-color: #B7C4DA;
+  color: #213555;
+}
+
+/* Margen del boton y el footer */
+footer {
+  margin-top: 20px; 
+}
+
+
+
+
+/*RESPONSIVE*/
+
+
+/*  Mobile & Tablet (menú hamburguesa) */
+.menu_icon {
+  display: none; /* Oculto en desktop */
+}
+.menu_icon{
+  align-items: flex-end;
+}
+.mobile_menu {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.mobile_menu.active {
+  transform: translateY(0);
+  display: flex;
+}
+
+/* Estilo para la barra superior del menú desplegable */
+.menu_top {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+/* Enlaces en el menú en mobile */
+.mobile_menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile_menu ul li {
+  margin: 20px 0;
+}
+
+.mobile_menu ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #213555;
+}
+
+
+
+/*------------------------------- QUERIES -------------------------------*/
+
+/*------------ BARRA DE NAVEGACIÓN DESKTOP--------- */
+@media (min-width: 992px) {
+  .navbar-nav {
+    justify-content: flex-end; 
+  }
+}
+
+/* ---------- BARRA DE NAVEGACIÓN MOBILE --------- */
+@media (max-width: 991px) {
+  .navbar-nav {
+    justify-content: center; 
+  }
+
+  .nav-link-boton-turnos {
+    margin-top: 10px;
+  }
+}
+
+/*--------- --- MENÚ HAMBURGUESA ------------------*/
+@media (max-width: 1024px) {
+  .nav_desktop {
+      display: none;
+  }
+
+  .menu_icon {
+      display: block;
+      cursor: pointer;
+  }
+
+  .menu {
+    width: 32px;
+    height: 32px;
+    background-size: 100% 100%; 
+}
+
+
+/* ------ FRANJAS SUPERIORES: EN MOBILE DESAPARECEN -----*/
+@media (max-width: 991px) {
+  .franja_superior, .franja_inferior {
+    display: none;
+  }
+}
+
+
+
+/* ------ LOGO NAVBAR -----*/
+@media (max-width: 768px) {
+  .logo_navbar {
+    width: 79px;
+    height: 27px;
+  }
+
+  .logo_subtitle {
+    font-size: 0.8rem; 
+  }
+}
+
+/*-----------------------FOOTER---------------------------*/
+/* TABLET Y LAPTOS PEQUEÑAS */
+@media (max-width: 1024px) {
+  footer section {
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+
+  footer section div {
+    flex: 1 1 48%; 
+    margin: 10px; 
+  }
+
+  footer section .bienestar img {
+    max-width: 100%; 
+    height: auto; 
+    width: auto;
+  }
+}
+/* TABLET */
+@media (max-width: 768px) {
+  footer section {
+    flex-direction: column; 
+  }
+
+  footer section div {
+    flex: 1 1 100%; 
+    margin: 10px 0; 
+  }
+
+  footer section .bienestar img {
+    max-width: 60%; 
+    margin-bottom: 10px; 
+  }
+  footer img {
+    width: 70%;
+    height: auto;
+  }
+  .icono-redes {
+    width: auto; 
+    height: auto;
+  }
+  footer h3 {
+    font-size: 1rem;
+  }
+  footer p {
+    font-size: 0.9rem; 
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  footer section {
+    flex-direction: column; 
+  }
+
+  footer section div {
+    flex: 1 1 100%; 
+    margin: 10px 0; 
+  }
+
+  footer section .bienestar img {
+    max-width: 80%; 
+    margin-bottom: 10px; 
+  }
+
+  footer p {
+    font-size: 0.9rem; 
+  }
+}
+
+
+/*-------INICIO--------*/
+
+
+
+/* CARRUSEL */
+
+@media (max-width: 768px) {
+
+  .bienvenida h1{
+    font-size: 1.2rem ; 
+    text-align: center;
+    margin-left: 10px;
+    margin-right:10px ;
+  }
+
+  
+  .carousel-caption-custom h2 {
+    font-size: 0.8rem; 
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .carousel-caption-custom p {
+    font-size: 0.7rem;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .botones_container{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 5px; 
+  }
+
+
+  button {
+    font-size: 0.6rem !important;
+    max-width: 150px; 
+    width: 121px !important;
+    height: 32px !important ;
+  }
+}
+
+/*BOTONES DEL CARRUSEL "PREVIO" Y "SIGUIENTE"*/
+@media (max-width:  576px) {
+  button.previo,
+  button.siguiente {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  button.previo {
+    left: 8px !important;
+  }
+
+  button.siguiente {
+    right: 8px !important;
+  }
+}
+
+/*INFO_CONTAINER*/
+
+/*MOBILE*/
+
+.info_container {
+  display: flex; 
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.info_container p{
+  color: black;
+  font-size: 0.9rem;
+  margin-right:10px;
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .info {
+    justify-content: center;  
+  }
+
+  .experiencia, .consultas, .os, .staff {
+    flex: 1 1 100%;  
+    max-width: 80%; 
+    margin-bottom: 20px; 
+  }
+}
+
+.info h3 {
+  font-size: 1.5rem;
+}
+
+.num{
+  font-size: 3rem;
+}
+.dato {
+  font-size: 1.5rem;
+}
+
+/* TABLETS */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .experiencia, .consultas, .os, .staff {
+    flex: 1 1 40%;  
+    max-width: 48%;
+  }
+}
+
+
+
+/*PREGUNTAS FRECUENTES*/
+@media (max-width: 768px) {
+  
+  
+  .container {
+    max-width: 100%; 
+    padding: 10px; 
+  }
+  
+  .faq_accordion {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px; 
+  }
+
+  .faq_button {
+    font-size: 14px; 
+    padding: 10px; 
+    white-space: normal; 
+    text-align: left; 
+    width: 100% !important;
+    max-width: 100% !important;
+      }
+    
+  
+
+  .faq_body {
+    font-size: 14px; 
+    padding: 0.8rem; 
+  }
+
+  .contenedor_boton_faq {
+    margin-top: 15px;
+  }
+
+  .ver_mas_faq {
+    font-size: 14px;
+    padding: 8px 16px;
+    height: auto;
+  }
+}
+
+
+
+/*SObre nosotros*/
+@media (max-width: 991px) { /* Se aplica en dispositivos móviles */
+  .text {
+    text-align: center; /* Centra el texto */
+    max-width: 90%; /* Ajusta el ancho para que no quede muy pegado a los bordes */
+    margin: 0 auto; /* Centra el contenedor */
+  }
+}
+
+
+/*nuestro equipo*/
+/* Media query para pantallas móviles */
+@media (max-width: 768px) {
+  .nuestro_equipo {
+    flex-direction: column; /* Pone las cards en columna */
+    align-items: center; /* Centra las cards en pantallas pequeñas */
+  }
+
+  .card {
+    width: 80%; /* Ajusta el tamaño de las cards a un 80% del contenedor */
+    margin-bottom: 20px; /* Espacio entre las cards */
+  }
+}
+
+/* Media query para pantallas móviles */
+@media (max-width: 768px) {
+  .img_sobre_nosotros {
+    display: none; /* Oculta la imagen en pantallas de 768px o menos */
+  }
+}
+
+/* Media query */
+/* Para mobile (pantallas pequeñas) */
+@media (max-width: 600px) {
+  .nuestro_equipo {
+    justify-content: center; /* Centra las cards */
+  }
+
+  .card {
+    max-width: 100%; /* Las cards ocuparán todo el ancho disponible */
+    margin-bottom: 10px; /* Agrega espacio entre las cards */
+  }
+}
+
+/* Para tablets (pantallas medianas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .nuestro_equipo {
+    justify-content: center; /* Centra las cards */
+  }
+
+  .card {
+    max-width: 45%; /* Dos cards por fila */
+  }
+}
+
+/* Para desktop () */
+@media (min-width: 1025px) {
+  .card {
+    max-width: 22%; /* Cuatro cards por fila */
+  }
+}
+
+
+/*Tratamientos*/
+
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
+  .tratamientos_section_grid {
+    grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    grid-template-areas: 
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6"; /* Cambiamos a una sola columna */
+  }
+
+  .tratamientos_section_grid .card {
+    width: 100%;
+    max-width: none; /* Las tarjetas se expanden al máximo */
+  }
+}
+
+
+/* OBRAS SOCIALES */
+
+
+@media (max-width: 768px) {
+  .seccion_os {
+    text-align: center; /* Centra todo el texto dentro de esta sección */
+    width: 100%; /* Asegura que la sección ocupe todo el ancho disponible */
+    padding: 0 10px; /* Añade un pequeño relleno a los lados para que no se peguen al borde */
+    margin: 0 auto; /* Centra la sección en la página */
+    display: flex;
+    flex-direction: column; /* Hace que los elementos se apilen de arriba hacia abajo */
+    justify-content: flex-start; /* Alinea los elementos al principio */
+    height: 100%; /* Hace que ocupe todo el alto disponible */
+  }
+
+  .detalle_columna {
+    display: none; /* Oculta la columna de detalles en dispositivos móviles */
+    visibility: hidden; /* Se asegura de que no se vea ni ocupe espacio */
+    width: 0; /* Asegura que no ocupe ancho */
+    height: 0; /* Asegura que no ocupe alto */
+    position: absolute;
+  }
+
+  .logos_columna {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna para los logos */
+    gap: 15px;
+    width: 100%; /* Asegura que el contenedor de los logos ocupe todo el ancho disponible */
+    max-width: 100%; /* Limita el ancho máximo al 100% */
+    margin: 0 auto; /* Centra el contenedor de los logos */
+    padding: 0 10px; /* Añade un pequeño relleno a los lados para que no se peguen al borde */
+    justify-items: center; /* Centra los logos dentro de cada celda */
+  }
+
+  .logo_os {
+    display: flex;
+    justify-content: center; /* Centra los logos dentro de cada celda */
+    align-items: center; /* Centra los logos verticalmente */
+  }
+
+  .logo_os img {
+    width: auto; /* Evita que las imágenes se escalen */
+    max-width: 80%; /* Limita el tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la relación de aspecto */
+  }
+}
+
+/* Estilos específicos para móvil boton ver mas os */
+@media (max-width: 767px) {
+  .button-container {
+    justify-content: center !important; /* Centra el contenedor */
+    width: 100% !important; 
+    max-width: 100% !important; 
+    padding: 0 !important;
+    margin: 0 auto !important;
+  }
+
+  .boton_ver_mas {
+    margin: 0 auto !important; /* Asegura que esté centrado */
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+}
+
+
+/*TURNOS*/
+.agendamos_turno .img_turno {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contacto_negrita {
+  font-family: "Public Sans", sans-serif; 
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.agendamos_turno .img_turno img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+/* Ocultar imagen en dispositivos móviles */
+
+
+
+@media (max-width: 768px) {
+  .agendamos_turno .img_turno {
+      display: none !important;
+  }
+}
+
+/* Formulario ara la versión móvil */
+@media (max-width: 768px) {
+  /* Se ajusta la altura del formulario para que ocupe toda la pantalla */
+  
+  #formulario {
+    height: 100vh; /* Se ajusta el alto para ocupar toda la pantalla */
+    min-height: 100vh;
+    background-image: url('../assets/img_back_contacto.png'); /* Se mantiene la imagen de fondo */
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    overflow: hidden
+
+  }
+ @media (max-width: 768px) {
+      /* Se ajusta la altura del formulario para que ocupe toda la pantalla */
+      
+  .agendamos_turno .info_contacto {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 50%;
+    }
+
+    .agendamos_turno .info_contacto {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+    
+    
+
+  
+  }
+
+  /* Rectángulo superior con el color #213555 */
+  .titulo_form {
+    width: 80%; /* Hace que el título ocupe el 100% del ancho */
+    text-align: center; /* Centra el título */
+    align-items: center;
+    background-color: #213555; /* Rectángulo con el fondo color #213555 */
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white; /* Texto en blanco */
+    border-radius: 5px 5px 0 0; /* Bordes redondeados en la parte superior */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    position: absolute; /* Se superpone */
+    top: 0;
+    display: flex;
+    z-index: 10; /* Se asegura de estar por encima */
+  }
+
+  .titulo_form h2 {
+    width: 85%;
+    font-size: 1.5rem;
+    margin: 0;
+    background-color: #213555;
+    color: white;
+    font-weight: bold;
+    font-weight: bold;
+    text-align: center;
+   
+  }
+
+/* Ocultar el párrafo en versión móvil */
+.titulo_form p {
+    display: none;
+}
+
+  /* Formulario con fondo blanco */
+  form {
+    width: 90vh;
+    max-height: 90vh;
+    position: relative; /* Posiciona el formulario en la parte superior */
+    z-index: 5; /* Un número menor que el título para que quede detrás */
+    top: 20px;
+    overflow-y: auto; /* Si es necesario, permite desplazamiento interno */
+    background-color: white; /* Fondo blanco */
+    padding: 20px;
+    top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0px;
+  }
+ 
+  #formulario label {
+    margin-top: 25px;
+    color: gray !important; /* Etiquetas en gris */ ;
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+
+  }
+  
+
+
+
+  /* Para las filas del formulario */
+  .input_row_one, .input_row_two {
+    display: flex;
+    flex-direction: column; /* Cambiar a columna */
+    gap: 10px; /* Espacio entre los elementos */
+    width: 100%;
+  }
+
+  .input_group {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+  }
+
+  input, select, textarea {
+    width: 100%;
+  }
+
+  /* Ajustes del botón de envío */
+  input[type="submit"] {
+    background-color: #213555;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 45px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    line-height: 45px; /* Centra verticalmente el texto */
+  }
+
+  input[type="submit"]:hover {
+    background-color: #B7C4DA;
+    border: #1a2d46 solid;
+    color: #213555 !important;
+  }
+
+  @media (max-width: 768px) {
+    form p {
+      display: none; /* Oculta los párrafos en mobile */
+    }
+  }
+}
+}
