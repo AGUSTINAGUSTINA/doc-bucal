@@ -37,44 +37,48 @@
             </div>
         </div>
         <header>
-          <!-- Barra de navegación desktop -->
+          <!-- BARRA DE NAVEGACIÓN -->
           <nav class="navbar navbar-expand-lg custom-navbar">
-            <div class="container-fluid">
-              <!-- Logo Principal (visible en la barra de navegación normal) -->
+            <div class="container-fluid links_container">
+              <!-- LOGO BRAND -->
               <a class="navbar-brand logo_container" href="../index.html">
                 <img src="assets/logo_superior.png" alt="Logo Principal" class="logo_navbar">
                 <span class="logo_subtitle">Bienestar y belleza</span>
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> 
+              <!-- MENÚ HAMBURGUESA (visible solo en mobile)-->
+              <button class="navbar-toggler custom_toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon menu_icon"></span> 
               </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- Menú desplegado con logo simplificado y botón de cierre -->
-                <div class="navbar-content">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">Inicio</a>
+                <!--BARRA EN DESKTOP (un link al lado del otro a la derecha)-->
+              <div class="collapse navbar-collapse custom_collapse" id="navbarNav">
+              
+                <div class="navbar-content container_custom_navbar">
+                  <ul class="navbar-nav custom_navbar">
+                    <li class="nav-item custom_item">
+                      <a class="nav-link custom_links" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="pages/sobre_nosotros.html">Sobre nosotros</a>
+                    <li class="nav-item custom_item">
+                      <a class="nav-link custom_links" href="pages/sobre_nosotros.html">Sobre nosotros</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="pages/tratamientos.html">Tratamientos</a>
+                    <li class="nav-item custom_item">
+                      <a class="nav-link custom_links" href="pages/tratamientos.html">Tratamientos</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="pages/obras_sociales.html">Obras sociales</a>
+                    <li class="nav-item custom_item">
+                      <a class="nav-link custom_links" href="pages/obras_sociales.html">Obras sociales</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="pages/reseñas.html">Reseñas</a>
+                    <li class="nav-item custom_item">
+                      <a class="nav-link custom_links" href="pages/opiniones.html">Reseñas</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link-boton-turnos" href="pages/turnos.html">Turnos</a>
+                    <li class="nav-item custom_link">
+                      <a class="nav-link-boton-turnos nav_turnos" href="pages/turnos.html">Turnos</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </nav>
+
+
         </header>
         
         <div class="bienvenida">
@@ -91,7 +95,7 @@
             <div class="carousel-caption-custom">
               <h2>TODAS LAS ESPECIALIDADES EN UN MISMO LUGAR</h2>
               <p>Conocé todos los servicios que ofrecemos y agendá tu turno</p>
-              <div class="botones_container"> <!-- botones conteiner-->
+              <div class="botones_container"> 
                   <button id="nuestros_servicios">Nuestros servicios</button>
                   <a href="turnos.html">
                        <Button id="num_tel">
@@ -108,7 +112,7 @@
             <div class="carousel-caption-custom">
               <h2>¿Te realizaste alguna vez un blanqueamiento?</h2>
               <p> Es un procedimiento clínico seguro que aclara el color de los dientes sin dañar el esmalte.</p>
-              <div class="botones_container"> <!-- botones conteiner-->
+              <div class="botones_container"> 
                   <button id="conoce_mas">Conocé más</button>
                   <a href="turnos.html"> </a>
               </div>
@@ -119,8 +123,8 @@
             <img src="assets/img_inicio3.png" class="d-block w-100" alt="...">
             <div class="carousel-caption-custom">
             <h2>Transformá tu sonrisa con ortodoncia personalizada.</h2>
-            <p> La ortodoncia no solo mejora la estética, sino también la salud y funcionalidad de tu boca. Consultá con un especialista para encontrar la mejor opción para vos.</p>
-            <div class="botones_container"> <!-- botones conteiner-->
+            <p> La ortodoncia no solo mejora la estética, sino también la salud y funcionalidad de tu boca. Consultá la mejor opción para vos.</p>
+            <div class="botones_container"> 
                 <button id="agenda">Agendá tu consulta</button>
                 <a href="turnos.html"> </a>
             </div>
@@ -142,6 +146,7 @@
         
         
         <!-- Cards de info del centro odontológico -->
+         <section>
         
           <div class="info_container">
             <p>En nuestro Centro Odontológico contamos con un equipo de profesionales especializados que trabajan en conjunto utilizando materiales de primera calidad. Tu salud bucal es nuestra prioridad. ¡Te esperamos para brindarte la mejor atención!</p>
@@ -250,9 +255,11 @@
           </div>
           <div class="redes">
             <h3 class="footer">Nuestras redes</h3>
-            <img src="assets/tiktok_svg.png" alt="TikTok"  class="icono-redes">
-            <img src="assets/instagram_svg.png" alt="Instagram" class="icono-redes">
-            <img src="assets/facebook_svg.png" alt="Facebook" class="icono-redes">
+            <div class="iconos">
+              <img src="assets/tiktok_svg.png" alt="TikTok" class="icono-redes">
+              <img src="assets/instagram_svg.png" alt="Instagram" class="icono-redes">
+              <img src="assets/facebook_svg.png" alt="Facebook" class="icono-redes">
+            </div>
           </div>
         </section>
         <p class="footer_derechos_reservados">© 2015 DocBucal - Todos los Derechos Reservados</p>

@@ -35,38 +35,40 @@
            </div>
        </div>
        <header>
-        <!-- Barra de navegación desktop-->
+    <!-- BARRA DE NAVEGACION-->
   <nav class="navbar navbar-expand-lg custom-navbar">
-   <div class="container-fluid">
-     <!-- Logo Principal (visible en la barra de navegación normal) -->
-     <a class="navbar-brand" href="../index.html">
-       <img src="../assets/logo_superior.png" alt="Logo Principal" width 80%="d-inline-block align-text-top">
+   <div class="container-fluid links_container">
+     <!-- LOGO BRAND -->
+     <a class="navbar-brand logo_container" href="../index.html">
+       <img src="../assets/logo_superior.png" alt="Logo Principal" class="logo_navbar">
        <span class="logo_subtitle">Bienestar y belleza</span>
      </a>
-     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span> 
+     <!-- MENÚ HAMBURGUESA (visible solo en mobile)-->
+     <button class="navbar-toggler custom_toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon menu_icon"></span> 
      </button>
-     <div class="collapse navbar-collapse" id="navbarNav">
+     <!--BARRA EN DESKTOP (un link al lado del otro a la derecha)-->
+     <div class="collapse navbar-collapse custom_collapse" id="navbarNav">
        
-       <div class="navbar-content">
-         <ul class="navbar-nav">
-           <li class="nav-item">
-             <a class="nav-link" href="../index.html">Inicio</a>
+       <div class="navbar-content container_custom_navbar">
+         <ul class="navbar-nav custom_navbar">
+           <li class="nav-item custom_item">
+             <a class="nav-link custom_links" href="../index.html">Inicio</a>
            </li>
-           <li class="nav-item">
-             <a class="nav-link" href="sobre_nosotros.html">Sobre nosotros</a>
+           <li class="nav-item custom_item">
+             <a class="nav-link custom_links" href="sobre_nosotros.html">Sobre nosotros</a>
            </li>
-           <li class="nav-item">
-             <a class="nav-link" href="tratamientos.html">Tratamientos</a>
+           <li class="nav-item custom_item">
+             <a class="nav-link custom_links" href="tratamientos.html">Tratamientos</a>
            </li>
-           <li class="nav-item">
-             <a class="nav-link" href="obras_sociales.html">Obras sociales</a>
+           <li class="nav-item custom_item">
+             <a class="nav-link custom_links" href="obras_sociales.html">Obras sociales</a>
            </li>
-           <li class="nav-item">
-             <a class="nav-link" href="reseñas.html">Reseñas</a>
+           <li class="nav-item custom_item">
+             <a class="nav-link custom_links" href="opiniones.html">Reseñas</a>
            </li>
-           <li class="nav-item">
-             <a class="nav-link-boton-turnos" href="turnos.html">Turnos</a>
+           <li class="nav-item custom_links">
+             <a class="nav-link-boton-turnos nav_turnos" href="turnos.html">Turnos</a>
            </li>
          </ul>
        </div>
@@ -77,7 +79,7 @@
     
    </header>
   <main>
-    <h1>Gestión de Turnos</h1>
+    <h1 class="gestion_turnos">Gestión de Turnos</h1>
     <section class="agendamos_turno">
        
         <!-- Información de contacto -->
@@ -181,7 +183,7 @@
          <!-- Bootstrap JS vía CDN -->
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </main>
-
+ <!-- FOOTER (4 divisiones y un p abajo de derechos reservados -->
   <footer>
     <section>
       <div>
@@ -206,12 +208,14 @@
           </iframe>
         </div>
       </div>
-      <div>
-        <h3>Nuestras redes</h3>
-        <img src="../assets/tiktok_svg.png" alt="TikTok">
-        <img src="../assets/instagram_svg.png" alt="Instagram">
-        <img src="../assets/facebook_svg.png" alt="Facebook">
+      <div class="redes">
+        <h3 class="footer">Nuestras redes</h3>
+        <div class="iconos">
+        <img src="../assets/tiktok_svg.png" alt="TikTok" class="icono-redes">
+        <img src="../assets/instagram_svg.png" alt="Instagram" class="icono-redes">
+        <img src="../assets/facebook_svg.png" alt="Facebook" class="icono-redes">
       </div>
+    </div>
     </section>
     <p class="footer_derechos_reservados">© 2015 DocBucal - Todos los Derechos Reservados</p>
   </footer>
