@@ -1718,7 +1718,13 @@ footer {
     margin-top: 10px;
   }
 }
-
+/*----------------------- BOTÓN WHATSAPP ----------------------------*/
+@media (max-width: 575px) {
+.floating-whatsapp img {
+  width: 40px; 
+  height: 40px; 
+}
+}
 /*----------------------- MENÚ HAMBURGUESA ----------------------------*/
 @media (max-width: 575px) {
   .menu_icon {
