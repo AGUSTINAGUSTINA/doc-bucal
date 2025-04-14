@@ -2367,4 +2367,9 @@ h1.gestion_turnos{
   display: none;
 }
 }
+@media (max-width: 575px){
+  }
+ .formulario_p {
+  display: none;
+}
   }
