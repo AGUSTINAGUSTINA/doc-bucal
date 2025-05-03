@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doc.Bucal</title>
-    <!-- tipografia titillium web -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <!-- tipografia public sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS vía CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
- 
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doc.Bucal</title>
+  <!-- tipografia titillium web -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!-- tipografia public sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap CSS vía CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/stylesass.css">
+
+
 </head>
 
 <body>
-     <!-- Primer contenedor (ubicación y teléfono) -->
-     <div class="franja_superior">
-        <div class="location">
-            <img src="../assets/icono_ubicación.png" alt="Ubicación" class="icon">
-            <span class="localizacion">Rafael Nuñez 1988</span>
-        </div>
-        <div class="phone">
-            <img src="../assets/icono_telefono.png" alt="Teléfono" class="icon">
-            <span class="num_telefono">849964143</span>
-        </div>
+  <!-- Primer contenedor (ubicación y teléfono) -->
+  <div class="franja_superior">
+    <div class="location">
+      <img src="../assets/icono_ubicación.png" alt="Ubicación" class="icon">
+      <span class="localizacion">Rafael Nuñez 1988</span>
     </div>
-        <!-- Segundo contenedor (horarios) -->
-        <div class="franja_inferior">
-            <div class="hours">
-                <img src="../assets/icono_reloj.png" alt="Horario" class="icon">
-                <span class="horario">Lunes a viernes de 10 a 20 hs</span>
-            </div>
-        </div>
-        <header>
-     <!-- BARRA DE NAVEGACION-->
-     <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="phone">
+      <img src="../assets/icono_telefono.png" alt="Teléfono" class="icon">
+      <span class="num_telefono">849964143</span>
+    </div>
+  </div>
+  <!-- Segundo contenedor (horarios) -->
+  <div class="franja_inferior">
+    <div class="hours">
+      <img src="../assets/icono_reloj.png" alt="Horario" class="icon">
+      <span class="horario">Lunes a viernes de 10 a 20 hs</span>
+    </div>
+  </div>
+  <header>
+    <!-- BARRA DE NAVEGACION-->
+    <nav class="navbar navbar-expand-lg custom-navbar">
       <div class="container-fluid links_container">
         <!-- Logo Principal (visible en la barra de navegación normal) -->
         <a class="navbar-brand logo_container" href="../index.html">
@@ -48,12 +55,13 @@
           <span class="logo_subtitle">Bienestar y belleza</span>
         </a>
         <!-- MENÚ HAMBURGUESA (visible solo en mobile)-->
-        <button class="navbar-toggler custom_toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon menu_icon"></span> 
+        <button class="navbar-toggler custom_toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon menu_icon"></span>
         </button>
         <!--BARRA EN DESKTOP (un link al lado del otro a la derecha)-->
         <div class="collapse navbar-collapse custom_collapse" id="navbarNav">
-          
+
           <div class="navbar-content container_custom_navbar">
             <ul class="navbar-nav custom_navbar">
               <li class="nav-item custom_item">
@@ -79,84 +87,176 @@
         </div>
       </div>
     </nav>
-   
 
-      
-     </header>
-          
-      </header>
-      
-    <main>
-       <h1 class="opiniones">Lo que opinan nuestros Pacientes</h1>
-       <section>
-            <div class="matias_card">
-                <img src="../assets/dos_estrellas.png" alt="dos_estrellas">
-                <h2 class="name">Matias Wernike</h2>
-                <p class="opinion">La atención fue un poco más lenta de lo que esperaba. Aunque los profesionales fueron amables, hubo demoras que afectaron la experiencia. Me gustaría que se pudiera mejorar la organización para evitar la espera tan larga.</p>
 
-            </div>
-            <div class="paz_cadr">
-                <img src="../assets/tres_estrellas.png" alt="tres_estrellas">
-                <h2 class="name">Paz Stang</h2>
-                <p class="opinion">La atención fue buena en general, aunque hay aspectos que se podrían mejorar. El equipo fue profesional, pero el ambiente podría ser mejor si regaran las plantas, dan mal aspecto. Aún así, tuve una experiencia positiva.</p>
-            </div>
-            <div class="sebastian_card">
-                <img src="../assets/cinco_estrellas.png" alt="cinco_estrellas">
-                <h2 class="name">Sebastián Frías</h2>
-                <p class="opinion">Excelente atención, desde que llegué me hicieron sentir muy cómodo. Los profesionales son muy atentos y se aseguran de explicarte cada paso del tratamiento. Definitivamente volveré, estoy muy contento con el servicio recibido.</p>
-            </div>
-       </section>
-       <section class="indicator_conteiner">
-        <img src="../assets/page_indicator.png" alt="">
-       </section>
 
-</div>
-       <section>
-        <button class="boton_ver_mas">Ver más</button>
-       </section>
-    <!-- Bootstrap JS vía CDN -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Botón de WhatsApp -->
-    <a href="https://wa.me/1234567890" class="floating-whatsapp">
-      <img src="../assets/icon_whatsapp.png" alt="WhatsApp">
-    </a> 
-    </main>
- <!-- FOOTER (4 divisiones y un p abajo de derechos reservados -->
- <footer>
-  <section>
-    <div>
-      <img src="../assets/logo_footer.png" alt="Logo">
-      <span class="logo_subtitle_footer">Bienestar y belleza</span>
-    </div>
-    <div>
-      <h3 class="footer_contacto">Contacto</h3>
-      <p>Rafael Nuñez 1988</p>
-      <p>Mail: doc.bucal@gmail.com</p>
-      <p>Teléfono: 849964143</p>
-    </div>
-    <div>
-      <h3 class="footer">Ubicación</h3>
-      <div class="mapa-container">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13324.93826449738!2d-64.22780319147637!3d-31.37673950340616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a27e0ae87485%3A0x4f3768e253ba7a7a!2sRafael%20Nu%C3%B1ez%201988%2C%20X5009DYT%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1712098567890!5m2!1ses!2sar" 
-          class="mapa-ubicacion"
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy">
-        </iframe>
+  </header>
+
+  </header>
+
+  <main>
+
+    <h1 class="opiniones">Lo que opinan nuestros Pacientes</h1>
+
+    <!-- Contenido de los Slides (Pestañas) -->
+    <div class="tab-content tab_container" id="pills-tabContent">
+      <!-- Slide 1 -->
+      <div class="tab-pane fade show active pill_cards_active" id="pills-1" role="tabpanel"
+        aria-labelledby="pills-tab1">
+        <div class="cards_container">
+          <div class="matias_card">
+            <img src="../assets/dos_estrellas.png" alt="dos_estrellas">
+            <h2 class="name">Matias Wernike</h2>
+            <p class="opinion">La atención fue un poco más lenta de lo que esperaba. Aunque los profesionales fueron
+              amables, hubo demoras que afectaron la experiencia. Me gustaría que se pudiera mejorar la organización
+              para evitar la espera tan larga</p>
+          </div>
+          <div class="paz_cadr">
+            <img src="../assets/tres_estrellas.png" alt="tres_estrellas">
+            <h2 class="name">Paz Stang</h2>
+            <p class="opinion">La atención fue buena en general, aunque hay aspectos que se podrían mejorar. El equipo
+              fue profesional, pero el ambiente podría ser mejor si regaran las plantas, dan mal aspecto. Aún así, tuve
+              una experiencia positiva.</p>
+          </div>
+          <div class="sebastian_card">
+            <img src="../assets/cinco_estrellas.png" alt="cinco_estrellas">
+            <h2 class="name">Sebastián Frías</h2>
+            <p class="opinion">Excelente atención, desde que llegué me hicieron sentir muy cómodo. Los profesionales son
+              muy atentos y se aseguran de explicarte cada paso del tratamiento. Definitivamente volveré, estoy muy
+              contento con el servicio recibido.</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="redes">
-      <h3 class="footer">Nuestras redes</h3>
-      <div class="iconos">
-      <img src="../assets/tiktok_svg.png" alt="TikTok" class="icono-redes">
-      <img src="../assets/instagram_svg.png" alt="Instagram" class="icono-redes">
-      <img src="../assets/facebook_svg.png" alt="Facebook" class="icono-redes">
-    </div>
-  </div>
-  </section>
-  <p class="footer_derechos_reservados">© 2015 DocBucal - Todos los Derechos Reservados</p>
-</footer>
-  
+
+      <!-- Slide 2 -->
+      <div class="tab-pane fade pill_cards_2" id="pills-2" role="tabpanel" aria-labelledby="pills-tab2">
+        <div class="cards_container">
+          <div class="lucia_card">
+            <img src="../assets/cinco_estrellas.png" alt="cinco_estrellas">
+            <h2 class="name">Lucía Montes de Oca</h2>
+            <p class="opinion">¡Excelente atención! Me sentí súper contenida y segura durante todo el tratamiento.
+              Además, la secretaria fue un amor, siempre atenta, resolviendo todas mis dudas con una sonrisa y mucha
+              paciencia. ¡Gracias Sin dudas los voy a recomendar siempre</p>
+          </div>
+          <div class="simona_card">
+            <img src="../assets/una_estrella.png" alt="una_estrella">
+            <h2 class="name">Simona Angeletti</h2>
+            <p class="opinion">Me atendieron, pero no quedé conforme con la experiencia. Sentí que la atención fue muy
+              apurada y no resolvieron todas mis dudas. El lugar es lindo, pero creo que deberían mejorar en la
+              comunicación y en el tiempo que le dedican a cada paciente</p>
+          </div>
+          <div class="dominique_card">
+            <img src="../assets/cinco_estrellas.png" alt="cinco_estrellas">
+            <h2 class="name">Hayes Dominique</h2>
+            <p class="opinion">Mi experiencia fue increíble. Desde que llegué, me hicieron sentir muy cómoda. El
+              profesionalismo de los odontólogos es excelente, explican cada paso del tratamiento y se nota el
+              compromiso con el paciente ¡Recomiendo este centro odontológico con los ojos cerrados!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="tab-pane fade pill_cards_3" id="pills-3" role="tabpanel" aria-labelledby="pills-tab3">
+        <div class="cards_container">
+          <div class="arwen_card">
+            <img src="../assets/cinco_estrellas.png" alt="cinco_estrellas">
+            <h2 class="name">Arwen Werckraski</h2>
+            <p class="opinion">No tengo más que palabras de agradecimiento.El consultorio es hermoso, súper limpio y
+              organizado. La secretaria fue muy amable y me ayudó a autorizar todo de manera rápida y fácil. ¡Volvería
+              sin
+              dudarlo!</p>
+          </div>
+          <div class="rufina_card">
+            <img src="../assets/cuatro_estrellas.png" alt="cuatro_estrellas">
+            <h2 class="name">Rufina Folch</h2>
+            <p class="opinion">Muy buena atención y excelente calidad profesional. Me sentí muy cómoda durante todo el
+              tratamiento. El lugar es impecable y el trato del personal, de diez. Lo único que mejoraría es que a veces
+              los turnos se demoran un poquito, pero fuera de eso, súper recomendable</p>
+          </div>
+          <div class="carolina_card">
+            <img src="../assets/cinco_estrellas.png" alt="cinco_estrellas">
+            <h2 class="name">Carolina Gonzalez</h2>
+            <p class="opinion">Tuve una muy buena experiencia. Los profesionales son muy atentos y explican todo con
+              claridad. El ambiente del consultorio es agradable y moderno. Solo le pondría 5 estrellas si ofrecieran
+              más
+              disponibilidad de horarios, pero sin dudas volvería.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="indicator_conteiner">
+        <!-- Nav Pills (Pestañas) -->
+        <ul class="nav nav-pills dot_indicadors" id="pills-tab" role="tablist">
+          <li class="nav-item dot_item" role="presentation">
+            <a class="nav-link active dot_link active" id="pills-tab1" data-bs-toggle="pill" href="#pills-1" role="tab"
+              aria-controls="pills-1" aria-selected="true"> <span class="dot active"></span>
+            </a>
+          </li>
+          <li class="nav-item dot_item" role="presentation">
+            <a class="nav-link dot_link" id="pills-tab2" data-bs-toggle="pill" href="#pills-2" role="tab"
+              aria-controls="pills-2" aria-selected="false"><span class="dot"></span>
+            </a>
+          </li>
+          <li class="nav-item dot_item" role="presentation">
+            <a class="nav-link dot_link" id="pills-tab3" data-bs-toggle="pill" href="#pills-3" role="tab"
+              aria-controls="pills-3" aria-selected="false"><span class="dot"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="button_container">
+        <button class="ver_mas">Ver más</button>
+      </div>
+
+
+
+      <!-- Bootstrap JS vía CDN -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- AOS JS -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+      <!-- Botón de WhatsApp -->
+      <a href="https://wa.me/1234567890" class="floating-whatsapp">
+        <img src="../assets/icon_whatsapp.png" alt="WhatsApp">
+      </a>
+  </main>
+  <!-- FOOTER (4 divisiones y un p abajo de derechos reservados -->
+  <footer>
+    <section>
+      <div>
+        <img src="../assets/logo_footer.png" alt="Logo">
+        <span class="logo_subtitle_footer">Bienestar y belleza</span>
+      </div>
+      <div>
+        <h3 class="footer_contacto">Contacto</h3>
+        <p>Rafael Nuñez 1988</p>
+        <p>Mail: doc.bucal@gmail.com</p>
+        <p>Teléfono: 849964143</p>
+      </div>
+      <div>
+        <h3 class="footer">Ubicación</h3>
+        <div class="mapa-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13324.93826449738!2d-64.22780319147637!3d-31.37673950340616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a27e0ae87485%3A0x4f3768e253ba7a7a!2sRafael%20Nu%C3%B1ez%201988%2C%20X5009DYT%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1712098567890!5m2!1ses!2sar"
+            class="mapa-ubicacion" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+      <div class="redes">
+        <h3 class="footer">Nuestras redes</h3>
+        <div class="iconos">
+          <img src="../assets/tiktok_svg.png" alt="TikTok" class="icono-redes">
+          <img src="../assets/instagram_svg.png" alt="Instagram" class="icono-redes">
+          <img src="../assets/facebook_svg.png" alt="Facebook" class="icono-redes">
+        </div>
+      </div>
+    </section>
+    <p class="footer_derechos_reservados">© 2015 DocBucal - Todos los Derechos Reservados</p>
+  </footer>
+
 </body>
+
 </html>

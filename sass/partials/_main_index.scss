@@ -1,0 +1,368 @@
+@use 'variables' as *;
+/*-----------------------------------------------INDEX--------------------------------------------------*/
+//Se incorporó un mensaje de bienvenida con el fin de generar una sensación de cercanía y calidez. */
+/*BIENVENIDA*/ 
+.bienvenida {
+    text-align: center;
+    margin: 0 0 10px 0;
+    width: 100%;
+    max-width: 100%;
+  
+    h1 {
+      font-size: $size-h1;
+      margin: 5px 0 20px 0;
+      color: $azul;
+      font-weight: bold;
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.42);
+    }
+  }
+  
+// ANTES:
+//Para la imagen de fondo se creó un contenedor, ya que dentro de la imagen, va un h1, p y botones.
+//Se utilizó 
+//"background-repeat: no-repeat" para que la imagen no se repita
+//"background-position: center center para que este centrada vertical y horizontalmente" 
+
+//AHORA:
+//Se implementó el componente Carrusel para mostrar múltiples imágenes 
+//dentro de un mismo contenedor. Se aprovechó su funcionalidad de 
+//flechas de navegación (arrows) para permitir el desplazamiento entre 
+//imágenes anteriores y siguientes mediante slides.*/
+/*CARRUSEL*/
+  .carousel-item {
+    position: relative;
+  }
+  
+  .carousel-caption-custom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+    width: 80%;
+    max-width: 600px;
+  
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      text-align: left;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: white;
+      text-align: left;
+    }
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  
+    &:hover {
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+    }
+  }
+  
+  button.previo,
+  button.siguiente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    z-index: 2;
+    width: 36px;
+    height: 36px;
+  
+    &.previo {
+      left: 15px;
+    }
+    &.siguiente {
+      right: 15px;
+    }
+  
+    .custom {
+      width: 30px;
+      height: 30px;
+      background-size: 100% 100%;
+    }
+  }
+  
+ /*BOTONES DENTRO DEL CARRUSEL*/
+  .botones_container {
+    display: flex;
+    gap: 15px;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  /* BOTÓN: "Nuestros servicios" */
+  #nuestros_servicios {
+    font-family: $public;
+    width: 200px;
+    height: 42px;
+    font-size: 16px;
+    border-radius: 19px;
+    border: 2px solid white;
+    background-color: $azul;
+    color: white;
+  
+    &:hover {
+      background-color: $grisaceo;
+      color: $azul;
+      border: 2px solid $azul;
+    }
+  }
+  
+ /* BOTÓN: "Número de teléfono" */
+  #num_tel {
+    width: 200px;
+    height: 42px;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: $public;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 18px;
+    border: 2px solid white;
+    gap: 10px;
+
+  /* Icóno de teléfono */
+    img {
+      width: 20px;
+      height: auto;
+    }
+  
+    &:hover {
+      background-color: $azul;
+      color: white;
+    }
+  }
+  
+ /* BOTÓN "Conocé más"*/
+  #conoce_mas {
+    font-family: $public;
+    width: 200px;
+    height: 42px;
+    font-size: 16px;
+    border-radius: 19px;
+    border: 2px solid white;
+    background-color: $azul;
+    color: white;
+  
+    &:hover {
+      background-color: $grisaceo;
+      color: #213555;
+      border: 2px solid $azul;
+    }
+  }
+  
+  /* BOTÓN "Agendá tu consulta"*/
+  #agenda {
+    font-family: $public;
+    width: 200px;
+    height: 42px;
+    font-size: 16px;
+    border-radius: 19px;
+    background-color: $azul;
+    border: 2px solid white;
+    color: white;
+  
+    &:hover {
+      background-color: #B7C4DA;
+      color: $azul;
+      border: 2px solid $azul;
+    }
+  }
+  
+ /*SECCIÓN INFO*/
+  .info_container {
+    width: 90%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 18px;
+    display: block;
+  
+    p {
+      font-family: $public;
+      font-size: 18px !important;
+      color: black;
+      margin: 10px;
+    }
+  }
+  
+/*----CARDS-----*/
+//Para el contenedor que agrupa todas las divs de información, se aplicaron las siguiente propiedades:
+//justify-content: space-between; para alinear las divs de manera horizontal 
+//gap: para generar un espacio entre las divs 
+//wrap: wrap para que pueda aplicarse el responsive */
+  .info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+  }
+  //Para el estilo de las divs internas:
+  //se utilizó flex: 1 para que las divs ocupen el mismo espacio
+ // min-width: 250px: para evitar que las divs se hagan demasiado pequeñas 
+  .experiencia,
+  .consultas,
+  .os,
+  .staff {
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h3 {
+    font-size: 24px;
+    font-family: $web;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .num {
+    font-size: 70px;
+    font-family: $public;
+    font-weight: bold;
+    color: $azul;
+    display: block;
+    text-align: center;
+  }
+  
+  .dato {
+    font-size: 18px;
+    font-family: $public;
+    font-weight: bold;
+    color: $azul;
+    display: block;
+    text-align: center;
+  }
+  
+/*----PREGUNTAS FRECUENTES----*/
+//Se utilizó el componente acordeón para hacer funcional las preguntas frecuentes
+.faq_container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .faq_title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: $web;
+    color: $azul;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .faq_accordion {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .faq_item {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .accordion-header {
+    width: 100%;
+    font-size: 18px !important;
+  }
+  
+/* BOTTON DEL ACORDEÓN */
+  .faq_button {
+    background-color: $grisaceo;
+    color: $azul;
+    font-weight: bold;
+    font-family: $web;
+    width: 100% !important;
+    box-sizing: border-box;
+    white-space: normal;
+  
+    &:not(.collapsed) {
+      background-color: $grisaceo;
+      color: $azul;
+      font-family: $web;
+    }
+  
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  
+  .faq_body {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    font-family: $public;
+    font-size: 16px;
+  }
+  
+  .resaltado {
+    font-weight: bold;
+    font-family: $public;
+  }
+  
+  .contenedor_boton_faq {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .ver_mas_faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: $azul;
+    border: 2px solid $azul;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+  
+    &:hover {
+      color: $azul;
+      border: 2px solid $azul;
+      background-color: $grisaceo;
+    }
+  }
+  

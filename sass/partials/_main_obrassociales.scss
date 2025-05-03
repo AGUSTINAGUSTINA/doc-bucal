@@ -1,0 +1,153 @@
+@use 'variables' as *;
+/*-----------------------OBRAS SOCIALES-------------------------------*/
+.text_os {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 0 auto;
+
+  h1 {
+    font-family: $web;
+    font-size: $size-h1 !important;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: $azul;
+    font-weight: $bold;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.42);
+  }
+
+  .p_os {
+    font-size: $size-p;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
+  .p_negrita {
+    font-weight: $bold;
+    text-align: center;
+    margin-bottom: 0px 0px 10px;
+    font-size: $size-p;
+  }
+}
+
+/* Contenedor */
+.seccion_os {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 30px; 
+  margin: 40px 0;
+
+  .logos_columna {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr) auto; 
+    gap: 20px;
+    position: relative;
+    align-items: flex-start;
+    justify-items: center;
+
+
+    /* Cada logo individual */
+    .logo_os {
+      img {
+        width: 65%;
+        height: auto;
+        border-radius: 5px;
+        object-fit: cover;
+        margin-bottom: 45px;
+      }
+    }
+  }
+}
+  .button-container {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+
+    .boton_ver_mas {
+      font-family: $public;
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      padding: 10px; 
+      font-size: $size-p;
+      background-color: transparent;
+      color: $azul;
+      border: 2px solid $azul;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%; 
+      max-width: 250px; 
+      box-sizing: border-box; 
+
+      &:hover {
+        background-color: $grisaceo;
+        color: $azul;
+      }
+    }
+  }
+
+ .detalle_columna {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+    .img_bucal {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 60px;
+  
+      img {
+        max-width: 100%;
+        height: 214px;
+        width: 376px;
+        border-radius: 8px;
+      }
+    }
+  
+    .card_os {
+      background-color: #F6F1EE;  
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 450px;
+      max-width: 520px;
+      justify-content: center;
+      align-self: flex-end;
+      margin-right: 30px;
+  
+      p {
+        font-size: $size-p;
+        margin: 5px 0;
+        color: $azul;
+      }
+  
+      .contenido_fila {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+  
+        img {
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+        }
+  
+        p {
+          font-size: $size-p;
+          margin: 0;
+          color: $azul;
+        }
+      }
+    }
+  }
+
+  

@@ -1,0 +1,197 @@
+@use 'variables' as *;
+/* ------------------------------------------------------------------TURNOS------------------------------------------------------------------------------- */
+
+h1 {
+  &.gestion_turnos {
+    font-family: $web;
+    font-size: 40px !important;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 5px;
+    color: $azul;
+    font-weight: $bold;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.42);
+  }
+}
+
+// Información de contacto
+.agendamos_turno {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 20px;
+
+  .info_contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 150px;
+    width: 50%;
+
+    h2 {
+      font-family: $web;
+      font-size: 32px !important;
+      margin: 5px 0 20px 0;
+      color: $azul;
+      font-weight: $regular;
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+    }
+
+    p {
+      margin: 10px 0;
+      font-family: $public;
+      font-size: 18px;
+      font-weight: $light;
+    }
+
+    .contacto_negrita {
+      font-family: $public;
+      font-size: 18px;
+      font-weight: $bold;
+      color: $azul;
+    }
+
+    .vector_whatsapp,
+    .vector_mail {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+    .vector_telefono {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .img_turno {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+/*FORMULARIO*/
+
+#formulario {
+  position: relative;
+  background-image: url('../assets/img_back_contacto.png');
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  margin-bottom: 0;
+
+  .titulo_form {
+    text-align: left;
+    width: 38%;
+    margin-right: 10px;
+    color: $blanco !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h2, p {
+      margin: 0;
+      color: $blanco;
+      text-align: left;
+      align-self: flex-start;
+    }
+  }
+
+  form {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    label,
+    p {
+      color: $blanco;
+      margin-top: 10px;
+      text-align: start;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: $azul;
+    }
+
+    .input_row_one,
+    .input_row_two {
+      display: flex;
+      gap: 45px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .input_group {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    input[type="submit"] {
+      background-color: $azul;
+      color: $blanco !important;
+      font-weight: $bold;
+      margin-top: 20px;
+      width: 105px;
+      height: 36px;
+      border-radius: 18px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
+      display: inline-block;
+      line-height: normal;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background-color: $grisaceo;
+        color: $azul !important;
+        border: 1px solid $azul;
+      }
+    }
+  }
+}

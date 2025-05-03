@@ -1,0 +1,72 @@
+/*BARRAS SUPERIORES*/
+@use 'variables' as *;
+/* -------------------------------------BARRA AZUL------------------------------------- */
+.franja_superior {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 10px 20px;
+    background-color: $azul;
+  
+    .location {
+      display: flex;
+      align-items: center;
+      color: white;
+  
+      .icon {
+        width: 20px;
+        height: auto;
+        margin-right: 10px;
+      }
+  
+      .localizacion {
+        font-family: $public;
+        color: white;
+        font-size: 16px;
+      }
+    }
+  
+    .phone {
+      display: flex;
+      align-items: center;
+      color: white;
+  
+      .icon {
+        width: 20px;
+        height: auto;
+        margin-right: 10px;
+      }
+  
+      .num_telefono {
+        font-family: $public;
+        color: white;
+        font-size: 16px;
+      }
+    }
+  }
+  
+  /* -------------------------------------BARRA CELESTE GRISÁCEA------------------------------------- */
+  .franja_inferior {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: $grisaceo;
+  
+    .hours {
+      display: flex;
+      align-items: center;
+      color: $azul;
+  
+      .icon {
+        width: 20px;
+        height: auto;
+        margin-right: 10px;
+      }
+  
+      .horario {
+        font-family: $public;
+        color: $azul;
+        font-size: 16px;
+      }
+    }
+  }

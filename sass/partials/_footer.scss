@@ -1,0 +1,112 @@
+@use './variables' as *;
+//e le aplicaron las siguientes propiedades para lograr lo siguiente:
+//"flex-direction: column" para apilar los elementos 
+//"position: relative": para que quede abajo del contenido 
+/*-----------------------FOOTER-------------------------------*/
+footer {
+  background-color: $beige;
+  color: $azul;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+
+  // SECCIÓN
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px;
+
+    // DIVISIONES DENTRO DE LA SECCIÓN
+    div {
+      flex: 1 1 22%;
+      margin: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      &.bienestar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        img {
+          max-width: 150px;
+          height: 350px;
+          width: 350px;
+          align-items: center;
+        }
+      }
+      h3 {
+        text-align: left;
+        font-weight: normal;
+      }
+    }
+  }
+  .logo_subtitle_footer {
+    text-align: left;
+    align-items: flex-start;
+    margin-left: 0px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: $azul;
+    display: block;
+    margin-bottom: 0;
+    flex-basis: 100%;
+    font-weight: bold;
+  }
+  p {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: $azul;
+    display: block;
+    margin-bottom: 0;
+
+  
+    &.footer_derechos_reservados {
+      text-align: left;
+      margin-top: 8px;
+      font-size: 1rem;
+      color: $azul;
+      margin-bottom: 0;
+      flex-basis: 100%;
+    }
+  }
+
+//MAPA
+  .mapa-container {
+    width: 200px;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .mapa-ubicacion {
+    width: 100%;
+    height: 100%;
+  }
+
+//REDES
+  .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+    .iconos {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+
+      .icono-redes {
+        width: 32px;
+      }
+    }
+  }
+}

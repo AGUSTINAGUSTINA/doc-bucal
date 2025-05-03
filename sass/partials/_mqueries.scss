@@ -1,0 +1,775 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+/* -------------------------------------------------------- BARRA DE NAVEGACIÓN  -------------------------------------------------------- */
+
+/* Desktop */
+@include desktop {
+    .navbar-nav {
+      justify-content: flex-end;
+    }
+  }
+  
+  /* Mobile */
+  @include mobile {
+    .custom_navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .container_custom_navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .custom-navbar li a {
+        text-align: center;
+        justify-content: center;
+      }
+    
+      .custom_item {
+        text-align: center;
+        justify-content: center;
+      }
+    
+      .custom_links {
+        text-align: center;
+        justify-content: center;
+      }
+    
+
+      .nav_turnos {
+        margin-top: 10px;
+        color: $blanco !important;             
+        background-color: $azul !important;    
+      }
+    }
+  /* Menú hamburguesa (mobile) */
+  @include mobile {
+    .menu_icon {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .menu {
+      width: 32px;
+      height: 32px;
+      background-size: 100% 100%;
+    }
+  }
+  
+  /* Franjas superiores en tablet y mobile */
+  @include tablet {
+    .franja_superior,
+    .franja_inferior {
+      display: none;
+    }
+  }
+  @include mobile { 
+    .franja_superior,
+    .franja_inferior {
+      display: none;
+    }
+  }
+  
+  /* Logo navbar en tablet y mobile */
+  @media (max-width: 991px) {
+    .logo_navbar {
+      width: 79px;
+      height: 27px;
+    }
+  
+    .logo_subtitle {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* -------------------------------------------------------- FOOTER -------------------------------------------------------- */
+  
+  @media (max-width: 1024px) {
+    footer section {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    footer section div {
+      flex: 1 1 48%;
+      margin: 10px;
+    }
+  
+    footer section .bienestar img {
+      max-width: 100%;
+      height: auto;
+      width: auto;
+    }
+  }
+  
+  @include mobile {
+    footer section {
+      flex-direction: column;
+    }
+  
+    footer section div {
+      flex: 1 1 100%;
+      margin: 10px 0;
+    }
+  
+    footer section .bienestar img {
+      max-width: 80%;
+      margin-bottom: 10px;
+    }
+  
+    footer img {
+      width: 70%;
+      height: auto;
+    }
+  
+    .icono-redes {
+      width: auto;
+      height: auto;
+    }
+  
+    footer h3 {
+      font-size: 1rem;
+    }
+  
+    footer p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* --------------------------------------------------------  INICIO -------------------------------------------------------- */
+  
+  @include mobile {
+    .bienvenida h1 {
+      font-size: 28px !important;
+      text-align: center;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .carousel-caption-custom h2 {
+      font-size: 16px;
+      text-align: center;
+      padding: 0 10px;
+    }
+  
+    .carousel-caption-custom p {
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 5px;
+      padding: 0 10px;
+    }
+  
+    .botones_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px;
+      gap: 5px;
+    }
+  
+    button {
+      font-size: 0.6rem !important;
+      max-width: 150px;
+      width: 121px !important;
+      height: 32px !important;
+    }
+  
+    button.previo,
+    button.siguiente {
+      width: 24px !important;
+      height: 24px !important;
+    }
+  
+    button.previo {
+      left: 8px !important;
+    }
+  
+    button.siguiente {
+      right: 8px !important;
+    }
+  }
+  
+
+  /* INFO CARDS */
+  
+  
+  @include mobile {
+    .info_container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+  
+      p {
+        color: black;
+        font-size: 16px !important;
+        padding: 10px;
+        margin: 0 10px;
+      }
+    }
+  
+    .info {
+      justify-content: center;
+    }
+  
+    .experiencia,
+    .consultas,
+    .os,
+    .staff {
+      flex: 1 1 100%;
+      max-width: 60%;
+      min-height: 180px;
+      margin-bottom: 20px;
+    }
+  
+    .info h3 {
+      font-size: 18px;
+    }
+  
+    .num {
+      font-size: 48px;
+    }
+  
+    .dato {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .experiencia,
+    .consultas,
+    .os,
+    .staff {
+      flex: 1 1 40%;
+      max-width: 48%;
+    }
+  }
+  
+  /* -------------------------------------------------------- PREGUNTAS FRECUENTES  -------------------------------------------------------- */
+  
+  @media (max-width: $tablet-max) {
+    .container {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .faq_title {
+      text-align: center;
+      font-size: 22px;
+    }
+  
+    .faq_accordion {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  
+    .accordion-header,
+    .faq_button {
+      font-size: 16px !important;
+      width: 100% !important;
+    }
+  
+    .faq_button {
+      padding: 10px;
+      white-space: normal;
+      text-align: left;
+      max-width: 100% !important;
+    }
+  
+    .faq_body {
+      font-size: 16px;
+      padding: 0.8rem;
+    }
+  
+    .contenedor_boton_faq {
+      margin-top: 15px;
+    }
+  
+    .ver_mas_faq {
+      font-size: 16px !important;
+      padding: 8px 16px;
+      height: auto;
+    }
+  }
+  
+  /* ------------------------------------------------------ SOBRE NOSOTROS -------------------------------------------------------- */
+  
+  @include mobile {
+  .content_container{ 
+   align-content: center;
+   margin-bottom: 10px;
+    .text {
+      text-align: center !important;
+      max-width: 100%;
+      width: 100%;
+  
+      h1 {
+        font-size: 28px !important;
+       
+      }
+  
+      h2 {
+        font-size: 22px;
+        margin: 0%;
+      }
+  
+      p {
+        font-size: 16px;
+        margin: 0%;
+        padding: 10px;
+      }
+    }
+}
+    .equipo h2 {
+      font-size: 22px;
+    }
+  
+    .card-body {
+      .nombre {
+        font-size: 1rem;
+      }
+  
+      .especialidad {
+        font-size: 0.875rem;
+      }
+    }
+/*NUESTRO EQUIPO*/  
+    .nuestro_equipo {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+ /* Se oculta la imagen en mobile */
+    .img_sobre_nosotros {
+      display: none !important;
+    }
+  }
+  
+  @include tablet {
+    .nuestro_equipo {
+      justify-content: center;
+    }
+  
+    .card {
+      max-width: 45%;
+    }
+  }
+  
+ /*---------------------------------------------------TRATAMIENTOS-----------------------------------------------------------*/
+@include mobile {
+    .tratamientos_section_grid {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6";
+      justify-items: center;
+  
+      .card {
+        width: 80%;
+  
+        &:hover {
+          transform: none;
+        }
+  
+        h3 {
+          font-size: 18px;
+        }
+      }
+    }
+  
+    h1.tratamientos {
+      font-size: 28px !important;
+    }
+  
+    p.tratamientos {
+      font-size: 16px;
+      margin: 0% !important; 
+      padding: 15px;
+    }
+  }
+  
+  
+  /* ------------------------------------------------------OBRAS SOCIALES----------------------------------------------------------------- */
+  @include mobile {
+    body {
+        overflow-x: hidden;
+      }
+      
+    html {
+        overflow-x: hidden;
+      }
+    .text_os {
+      h1 {
+        font-size: 28px !important;
+      }
+    }
+  
+    .p_os,
+    .p_negrita {
+      font-size: 16px;
+    }
+  
+    .seccion_os {
+      text-align: center;
+      width: 100%;
+      padding: 0% !important;
+      margin: 0% !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100%;
+
+    }
+  
+    .detalle_columna {
+      display: none;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      position: absolute;
+    }
+  
+    .logos_columna {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+      width: 100%;
+      max-width: 90%;
+      margin: 0 auto;
+      justify-items: center;
+    }
+  
+    .logo_os {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      img {
+        width: auto;
+        max-width: 80%;
+        height: auto;
+      }
+    }
+  
+    .button-container {
+      justify-content: center !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 0 !important;
+      margin: 0 auto !important;
+    }
+  
+    .boton_ver_mas {
+      margin: 0 auto !important;
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      font-size: 16px !important;
+    }
+  }
+  
+  
+  /*----------------------------------------------------------RESEÑAS--------------------------------------------------------------------*/
+  @include mobile {
+    .opiniones {
+      font-size: 28px !important;
+    }
+  
+    h2.name {
+      font-size: 22px;
+    }
+  
+    p.opinion {
+      font-size: 14px;
+    }
+  
+    .cards_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem; 
+    }
+  // Se utilizó  ".cards_container > div" para seleccionar todos los elementos div hijos 
+  //directos de un elemento con la clase ".cards_container".
+  //El símbolo > es el combinador de hijo directo. Es más específico que un selector descendiente.
+    .cards_container > div {
+      width: 80%; 
+    }
+  }
+  
+/* ------------------------------------------------------OBRAS SOCIALES----------------------------------------------------------------- */
+
+@include mobile {
+    .text_os h1 {
+      font-size: 28px !important;
+      width: 90%;
+    }
+  
+    .p_os {
+      font-size: 16px !important;
+      padding: 10px;
+      width: 90%;
+    }
+  
+    .p_negrita {
+      font-size: 16px !important;
+      padding: 10px;
+      width: 90%;
+    }
+  
+    .seccion_os {
+      text-align: center;
+      width: 100%;
+      padding: 0 10px;
+      margin: 0 auto !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100%;
+      
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+        margin: 0%;
+      }
+    }
+  
+    .detalle_columna {
+      display: none;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      position: absolute;
+    }
+  
+    .logos_columna {
+      display: grid;
+      grid-template-columns: 1fr !important;
+      gap: 15px;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      justify-items: center;
+    }
+  
+    .logo_os {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      img {
+        width: auto;
+        max-width: 80%;
+        height: auto;
+        display: block;
+      }
+    }
+  
+    .button-container {
+      justify-content: center !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 0 !important;
+      margin: 0 auto !important;
+      margin-bottom: 20px !important;
+    }
+  
+    .boton_ver_mas {
+      margin: 0 auto !important;
+      width: 100%;
+      max-width: 250px;
+      text-align: center;
+      font-size: 16px !important;
+      margin-bottom: 20px;
+    }
+  }
+/*------------------------------------------------------------TURNOS----------------------------------------------------------------------*/
+
+  .gestion_turnos {
+    @include mobile {
+      font-size: 28px !important;
+      text-align: center;
+    }
+  }
+  
+  .agendamos_turno {
+    @include mobile {
+      .img_turno {
+        display: none !important;
+      }
+  
+      .info_contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 15px !important;
+  
+        h2 {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 22px !important;
+        }
+  
+        p {
+          font-size: 16px;
+        }
+  
+        .contacto_negrita {
+          font-family: $public;
+          font-size: 16px;
+          font-weight: $bold;
+          color: $azul;
+        }
+  
+        .vector_telefono img {
+          width: 20px;
+          height: 20px;
+        }
+  
+        .vector_whatsapp img,
+        .vector_mail img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  
+  #formulario {
+    @include mobile {
+      height: 100vh;
+      min-height: 100vh;
+      background-image: url('../assets/img_back_contacto.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+  
+      .titulo_form {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        background-color: $azul;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        color: $blanco;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top: 0;
+        display: flex;
+        z-index: 10;
+  
+        h2 {
+          width: 100%;
+          font-size: 1.5rem;
+          margin: 0;
+          background-color: $azul;
+          color: $blanco;
+          font-weight: $bold;
+          text-align: center;
+        }
+  
+        p {
+          display: none;
+        }
+      }
+  
+      form {
+        width: 90vh;
+        max-height: 90vh;
+        position: relative;
+        z-index: 5;
+        top: 20px;
+        overflow-y: auto;
+        background-color: $blanco;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 0;
+        
+  
+        label {
+          margin-top: 5px;
+          color: gray !important;
+          display: block;
+          text-align: left;
+          font-size: 1rem;
+        }
+        label[for="nombre"] {
+            margin-top: 30px;
+          }
+        .input_row_one,
+        .input_row_two {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 100%;
+        }
+  
+        .input_group {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+  
+        input,
+        select,
+        textarea {
+          width: 100%;
+          margin-top: 5px;
+        }
+        
+  
+        input[type="submit"] {
+          background-color: $azul;
+          color: $blanco;
+          font-weight: $bold;
+          width: 100%;
+          height: 45px;
+          border-radius: 18px;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+          text-align: center;
+          display: inline-block;
+          line-height: 45px;
+          margin-top: 5px;
+        }
+      }
+      .requisito_turno {
+        @include mobile {
+          display: none;
+        }
+      }
+      
+    }
+  }
+  
+  

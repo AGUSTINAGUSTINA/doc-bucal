@@ -1,0 +1,147 @@
+@use 'variables' as *;
+
+/* ----------------------------------------------------------OPINIONES------------------------------------------------------------------------------- */
+
+/* Contenedor principal de las cards */
+.cards_container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Cards */
+  .matias_card, .paz_cadr, .sebastian_card, .lucia_card, .simona_card, .dominique_card, .arwen_card, .rufina_card, .carolina_card {
+    background-color:  #F6F1EE;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+  
+    img {
+      width: 100px;
+      height: auto;
+    }
+  }
+  
+  /* Título principal */
+  .opiniones {
+    font-family: $web;
+    font-weight: $bold;
+    font-size: 2.5rem;
+    margin: 5px 0 20px 0;
+    color: $azul;
+    text-align: center;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.42);
+  }
+  
+  /* Nombre de cada persona */
+  h2.name {
+    font-family: $web;
+    font-weight: $semibold;
+    font-size: 1.75rem;
+    color: $azul;
+    margin: 5px 0;
+  }
+  
+  /* Opinión de cada persona */
+  p.opinion {
+    font-family: $public;
+    font-weight: $light;
+    font-size: 1rem;
+    color: darken($gris, 25%); 
+    margin: 0;
+  }
+  
+  /* Indicadores */
+/* Indicadores */
+.indicator_conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* Puntitos */
+.dot_indicadors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .dot_item {
+    margin: 0 5px;
+  }
+
+  .dot_link {
+    background-color: transparent !important;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .dot {
+      display: block;
+      width: 12px;
+      height: 12px;
+      background-color: $gris; 
+      border-radius: 50%;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    &.active {
+      background-color: transparent !important;
+      border: none;
+
+      .dot {
+        background-color: $azul; 
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  
+}
+
+  /* Botón "ver más" */
+  .button_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .ver_mas {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $public;
+    padding: 10px;
+    width: 130px;
+    font-size: 1rem;
+    background-color: $blanco;
+    color: $azul;
+    text-align: center;
+    border: 2px solid $azul;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  
+    &:hover {
+      background-color: $grisaceo;
+      color: $azul;
+      border-color: $azul;
+    }
+  }
+  
