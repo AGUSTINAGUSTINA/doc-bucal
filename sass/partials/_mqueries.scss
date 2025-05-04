@@ -604,14 +604,12 @@
     }
   }
 /*------------------------------------------------------------TURNOS----------------------------------------------------------------------*/
-
-  .gestion_turnos {
-    @include mobile {
-      font-size: 28px !important;
-      text-align: center;
-    }
+h1.gestion_turnos {
+  @include mobile {
+    font-size: 28px !important;
+    text-align: center;
   }
-  
+}
   .agendamos_turno {
     @include mobile {
       .img_turno {

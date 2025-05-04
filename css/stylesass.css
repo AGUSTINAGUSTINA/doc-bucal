@@ -377,11 +377,18 @@ button.siguiente .custom {
   font-family: "Public Sans", sans-serif;
   width: 200px;
   height: 42px;
-  font-size: 16px;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 400;
   border-radius: 19px;
   border: 2px solid white;
   background-color: #213555;
   color: white;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
 }
 #nuestros_servicios:hover {
   background-color: #B7C4DA;
@@ -398,13 +405,15 @@ button.siguiente .custom {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Public Sans", sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   padding: 10px 15px;
   border-radius: 18px;
   border: 2px solid white;
   gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
   /* Icóno de teléfono */
 }
 #num_tel img {
@@ -815,7 +824,7 @@ h1.gestion_turnos {
   background-image: url("../assets/img_back_contacto.png");
   background-size: cover;
   background-position: center;
-  height: 75vh;
+  height: 80vh;
   display: flex;
   align-items: flex-start;
   padding: 10px;
@@ -845,6 +854,8 @@ h1.gestion_turnos {
 #formulario form label,
 #formulario form p {
   color: #FFFFFF;
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
   margin-top: 10px;
   text-align: start;
 }
@@ -854,7 +865,7 @@ h1.gestion_turnos {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   color: #213555;
@@ -863,7 +874,7 @@ h1.gestion_turnos {
 #formulario form .input_row_two {
   display: flex;
   gap: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 100%;
 }
 #formulario form .input_group {
@@ -873,18 +884,20 @@ h1.gestion_turnos {
 }
 #formulario form textarea {
   resize: none;
+  margin-bottom: 5px;
 }
 #formulario form input[type=submit] {
   background-color: #213555;
   color: #FFFFFF !important;
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 105px;
   height: 36px;
   border-radius: 18px;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
+  font-family: "Public Sans", sans-serif;
   text-align: center;
   display: inline-block;
   line-height: normal;
@@ -1817,7 +1830,7 @@ footer .redes .iconos .icono-redes {
 }
 /*------------------------------------------------------------TURNOS----------------------------------------------------------------------*/
 @media (max-width: 575px) {
-  .gestion_turnos {
+  h1.gestion_turnos {
     font-size: 28px !important;
     text-align: center;
   }

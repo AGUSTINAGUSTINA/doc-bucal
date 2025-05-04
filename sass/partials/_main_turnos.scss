@@ -103,7 +103,7 @@ h1 {
   background-image: url('../assets/img_back_contacto.png');
   background-size: cover;
   background-position: center;
-  height: 75vh;
+  height: 80vh;
   display: flex;
   align-items: flex-start;
   padding: 10px;
@@ -135,6 +135,8 @@ h1 {
     label,
     p {
       color: $blanco;
+      font-family: $public;
+      font-size: $size-p;
       margin-top: 10px;
       text-align: start;
     }
@@ -145,7 +147,7 @@ h1 {
       width: 100%;
       padding: 10px;
       margin-top: 5px;
-      margin-bottom: 15px;
+      margin-bottom: 5px;
       border: 1px solid #ccc;
       border-radius: 5px;
       color: $azul;
@@ -155,7 +157,7 @@ h1 {
     .input_row_two {
       display: flex;
       gap: 45px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       width: 100%;
     }
 
@@ -167,19 +169,21 @@ h1 {
 
     textarea {
       resize: none;
+      margin-bottom: 5px;
     }
 
     input[type="submit"] {
       background-color: $azul;
       color: $blanco !important;
       font-weight: $bold;
-      margin-top: 20px;
+      margin-top: 10px;
       width: 105px;
       height: 36px;
       border-radius: 18px;
       border: none;
       cursor: pointer;
-      font-size: 16px;
+      font-size: $size-p;
+      font-family: $public;
       text-align: center;
       display: inline-block;
       line-height: normal;
