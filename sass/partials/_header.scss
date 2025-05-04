@@ -142,8 +142,8 @@ de navegacion en mobile*/
     font-family: $public;
     font-size: 16px;
     border-radius: 19px;
-    font-weight: bold;
-    color: white;
+    font-weight: $bold;
+    color: $blanco;
     text-decoration: none;
     padding: 8px 20px;
     border-color: $azul;
@@ -155,7 +155,7 @@ de navegacion en mobile*/
       font-family: $public;
       font-size: 16px;
       border-radius: 19px;
-      font-weight: bold;
+      font-weight: $bold;
       color: $azul;
       text-decoration: none;
       border-color: solid $azul;
