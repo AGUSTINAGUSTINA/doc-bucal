@@ -227,7 +227,7 @@ de navegacion en mobile*/
   background-color: white;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   color: #213555;
   text-decoration: none;
   border-radius: 19px;
@@ -757,7 +757,7 @@ h1.gestion_turnos {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 150px;
+  margin-left: 50px;
   width: 50%;
 }
 .agendamos_turno .info_contacto h2 {
@@ -824,7 +824,7 @@ h1.gestion_turnos {
   background-image: url("../assets/img_back_contacto.png");
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 80%;
   display: flex;
   align-items: flex-start;
   padding: 10px;
@@ -918,7 +918,6 @@ h1.tratamientos {
   color: #213555;
   margin-top: 5px;
   margin-bottom: 20px;
-  color: #213555;
   font-weight: 700;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.42);
   text-align: center;
@@ -931,29 +930,41 @@ p.tratamientos {
   text-align: center;
 }
 
+.titulo_tratamientos {
+  display: flex;
+  width: 100% !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 20px 0;
+}
+.titulo_tratamientos h2.tratamientos {
+  font-family: "Titillium Web", serif;
+  color: #213555;
+  text-align: center;
+  width: 100%;
+}
+
 .tratamientos_section_grid {
   display: grid;
-  grid-template-areas: "card1 card2 card3" "card4 card5 card6";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
   gap: 15px;
   max-width: 900px;
   margin: 30px auto;
 }
 
-/*CARDS*/
 .tratamientos_section_grid .card {
   width: 100%;
   max-width: 330px;
-  height: 330px;
+  height: auto;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+  padding: 10px;
 }
 .tratamientos_section_grid .card:hover {
   transform: scale(1.05);
@@ -966,7 +977,7 @@ p.tratamientos {
   border-radius: 10px 10px 0 0;
 }
 .tratamientos_section_grid .card h3 {
-  margin-top: 10px;
+  margin-top: 18px;
   font-size: 1.2rem;
   color: #213555;
   font-weight: 700;
@@ -1002,6 +1013,16 @@ p.tratamientos {
   margin-bottom: 0px 0px 10px;
   font-size: 18px;
 }
+.text_os .contenedor_h2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+.text_os .h2_os {
+  text-align: left;
+  margin-left: 20px;
+}
 
 /* Contenedor */
 .seccion_os {
@@ -1009,6 +1030,7 @@ p.tratamientos {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin: 40px 0;
+  margin-left: 20px;
 }
 .seccion_os .logos_columna {
   display: grid;
@@ -1123,7 +1145,7 @@ p.tratamientos {
   background-color: #F6F1EE;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 350px;
+  width: 30%;
   padding: 20px;
   text-align: center;
   display: flex;
@@ -1135,6 +1157,7 @@ p.tratamientos {
 .matias_card img, .paz_cadr img, .sebastian_card img, .lucia_card img, .simona_card img, .dominique_card img, .arwen_card img, .rufina_card img, .carolina_card img {
   width: 100px;
   height: auto;
+  align-self: flex-end;
 }
 
 /* Título principal */
@@ -1162,7 +1185,7 @@ p.opinion {
   font-family: "Public Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  color: rgb(140.25, 140.25, 140.25);
+  color: black;
   margin: 0;
 }
 
@@ -1340,7 +1363,7 @@ footer .redes .iconos .icono-redes {
 
 /* -------------------------------------------------------- BARRA DE NAVEGACIÓN  -------------------------------------------------------- */
 /* Desktop */
-@media (min-width: 992px) {
+@media (min-width: 1025px) {
   .navbar-nav {
     justify-content: flex-end;
   }
@@ -1375,20 +1398,58 @@ footer .redes .iconos .icono-redes {
     background-color: #213555 !important;
   }
 }
+/* Tablet */
+@media (min-width: 576px) and (max-width: 1024px) {
+  .custom_navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container_custom_navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .custom-navbar li a {
+    text-align: center;
+    justify-content: center;
+  }
+  .custom_item {
+    text-align: center;
+    justify-content: center;
+  }
+  .custom_links {
+    text-align: center;
+    justify-content: center;
+  }
+  .nav_turnos {
+    color: #FFFFFF !important;
+    background-color: #213555 !important;
+  }
+}
 /* Menú hamburguesa (mobile) */
 @media (max-width: 575px) {
   .menu_icon {
     display: block;
     cursor: pointer;
   }
-  .menu {
+}
+/* Menú hamburguesa (tablet) */
+@media (min-width: 576px) and (max-width: 1024px) {
+  .custom_toggler {
+    width: 121px;
+    height: 32px;
+  }
+  .menu_icon {
     width: 32px;
     height: 32px;
     background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 /* Franjas superiores en tablet y mobile */
-@media (min-width: 576px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 1024px) {
   .franja_superior,
   .franja_inferior {
     display: none;
@@ -1400,8 +1461,8 @@ footer .redes .iconos .icono-redes {
     display: none;
   }
 }
-/* Logo navbar en tablet y mobile */
-@media (max-width: 991px) {
+/* Logo navbar en mobile */
+@media (max-width: 575px) {
   .logo_navbar {
     width: 79px;
     height: 27px;
@@ -1410,8 +1471,18 @@ footer .redes .iconos .icono-redes {
     font-size: 0.8rem;
   }
 }
+/* Logo navbar en tablet */
+@media (min-width: 576px) and (max-width: 1024px) {
+  .logo_navbar {
+    width: 83px;
+    height: 31px;
+  }
+  .logo_subtitle {
+    font-size: 1, 5rem;
+  }
+}
 /* -------------------------------------------------------- FOOTER -------------------------------------------------------- */
-@media (max-width: 1024px) {
+@media (max-width: 575px) {
   footer section {
     flex-wrap: wrap;
     justify-content: center;
@@ -1442,7 +1513,34 @@ footer .redes .iconos .icono-redes {
     width: 70%;
     height: auto;
   }
-  .icono-redes {
+  .redes .icono-redes {
+    width: 24px !important;
+    height: 24px;
+  }
+  footer h3 {
+    font-size: 1rem;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  footer section {
+    flex-direction: column;
+  }
+  footer section div {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+  footer section .bienestar img {
+    max-width: 80%;
+    margin-bottom: 10px;
+  }
+  footer img {
+    width: 70%;
+    height: auto;
+  }
+  .redes .icono-redes {
     width: auto;
     height: auto;
   }
@@ -1535,7 +1633,7 @@ footer .redes .iconos .icono-redes {
     font-size: 16px;
   }
 }
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 576px) and (max-width: 1024px) {
   .experiencia,
   .consultas,
   .os,
@@ -1545,7 +1643,7 @@ footer .redes .iconos .icono-redes {
   }
 }
 /* -------------------------------------------------------- PREGUNTAS FRECUENTES  -------------------------------------------------------- */
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .container {
     max-width: 100%;
     padding: 10px;
@@ -1630,12 +1728,18 @@ footer .redes .iconos .icono-redes {
     display: none !important;
   }
 }
-@media (min-width: 576px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 1024px) {
   .nuestro_equipo {
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: space-around !important;
+    gap: 20px;
+    padding: 0 10px;
   }
-  .card {
-    max-width: 45%;
+  .nuestro_equipo .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
   }
 }
 /*---------------------------------------------------TRATAMIENTOS-----------------------------------------------------------*/
@@ -1662,6 +1766,24 @@ footer .redes .iconos .icono-redes {
     margin: 0% !important;
     padding: 15px;
   }
+  h2.tratamientos {
+    font-size: 22px;
+    padding: 15PX;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .tratamientos_section_grid {
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: space-around !important;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  .tratamientos_section_grid .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
 }
 /* ------------------------------------------------------OBRAS SOCIALES----------------------------------------------------------------- */
 @media (max-width: 575px) {
@@ -1677,6 +1799,15 @@ footer .redes .iconos .icono-redes {
   .p_os,
   .p_negrita {
     font-size: 16px;
+  }
+  .contenedor_h2 {
+    justify-content: center;
+    padding-left: 0;
+  }
+  .contenedor_h2 .h2_os {
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
   }
   .seccion_os {
     text-align: center;
@@ -1697,9 +1828,9 @@ footer .redes .iconos .icono-redes {
   }
   .logos_columna {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    width: 100%;
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+    width: 90%;
     max-width: 90%;
     margin: 0 auto;
     justify-items: center;
@@ -1713,6 +1844,7 @@ footer .redes .iconos .icono-redes {
     width: auto;
     max-width: 80%;
     height: auto;
+    margin-bottom: 20px !important;
   }
   .button-container {
     justify-content: center !important;
@@ -1729,8 +1861,102 @@ footer .redes .iconos .icono-redes {
     font-size: 16px !important;
   }
 }
+@media (min-width: 576px) and (max-width: 1024px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  .text_os h1 {
+    font-size: 30px !important;
+  }
+  .p_os,
+  .p_negrita {
+    font-size: 18px;
+    padding-right: 15px;
+    padding-right: 15px;
+  }
+  .contenedor_h2 {
+    justify-content: center !important;
+  }
+  .contenedor_h2 .h2_os {
+    text-align: center;
+    font-size: 24px;
+    padding: 5px;
+  }
+  .seccion_os {
+    text-align: center;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+  .detalle_columna {
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+  .logos_columna {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-items: center;
+  }
+  .logo_os {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo_os img {
+    width: auto;
+    max-width: 80%;
+    height: auto;
+  }
+  .button-container {
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+  .boton_ver_mas {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+}
 /*----------------------------------------------------------RESEÑAS--------------------------------------------------------------------*/
 @media (max-width: 575px) {
+  .opiniones {
+    font-size: 28px !important;
+    padding: 15px;
+  }
+  h2.name {
+    font-size: 22px;
+  }
+  p.opinion {
+    font-size: 14px;
+  }
+  .cards_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .cards_container > div {
+    width: 80%;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
   .opiniones {
     font-size: 28px !important;
   }
@@ -1738,7 +1964,7 @@ footer .redes .iconos .icono-redes {
     font-size: 22px;
   }
   p.opinion {
-    font-size: 14px;
+    font-size: 18px !important;
   }
   .cards_container {
     display: flex;
@@ -1875,7 +2101,7 @@ footer .redes .iconos .icono-redes {
 @media (max-width: 575px) {
   #formulario {
     height: 100vh;
-    min-height: 100vh;
+    min-height: 100%;
     background-image: url("../assets/img_back_contacto.png");
     background-size: cover;
     background-position: center;
@@ -1888,9 +2114,9 @@ footer .redes .iconos .icono-redes {
     text-align: center;
     align-items: center;
     background-color: #213555;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 5px;
     color: #FFFFFF;
     border-radius: 5px 5px 0 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -1935,7 +2161,7 @@ footer .redes .iconos .icono-redes {
     font-size: 1rem;
   }
   #formulario form label[for=nombre] {
-    margin-top: 30px;
+    margin-top: 40px;
   }
   #formulario form .input_row_one,
   #formulario form .input_row_two {
@@ -1968,12 +2194,45 @@ footer .redes .iconos .icono-redes {
     text-align: center;
     display: inline-block;
     line-height: 45px;
-    margin-top: 5px;
+    margin-top: 10px;
   }
 }
 @media (max-width: 575px) and (max-width: 575px) {
   #formulario .requisito_turno {
     display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1024px) {
+  #formulario {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px 10px 30px;
+  }
+  #formulario .titulo_form,
+  #formulario form {
+    width: 100%;
+    margin-right: 0;
+    align-items: center;
+    text-align: center;
+  }
+  #formulario .titulo_form h2, #formulario .titulo_form p,
+  #formulario form h2,
+  #formulario form p {
+    text-align: center;
+    align-self: center;
+    margin-bottom: 10px;
+  }
+  #formulario form .input_row_one,
+  #formulario form .input_row_two {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  #formulario form input[type=submit] {
+    align-self: flex-start;
   }
 }
 

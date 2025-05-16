@@ -18,5 +18,10 @@
     }
   }
 
-  
+  @mixin mobile-tablet {
+  @media (max-width: $tablet-max) {
+    @content;
+  }
+}
+
   

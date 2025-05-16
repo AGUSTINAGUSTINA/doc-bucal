@@ -46,20 +46,74 @@
         background-color: $azul !important;    
       }
     }
+
+    
+  /* Tablet */
+  @include tablet{
+  .custom_navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .container_custom_navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .custom-navbar li a {
+        text-align: center;
+        justify-content: center;
+      }
+    
+      .custom_item {
+        text-align: center;
+        justify-content: center;
+      }
+    
+      .custom_links {
+        text-align: center;
+        justify-content: center;
+      }
+    
+
+      .nav_turnos {
+        
+        color: $blanco !important;             
+        background-color: $azul !important;    
+      }
+    }
+
   /* Menú hamburguesa (mobile) */
   @include mobile {
     .menu_icon {
       display: block;
       cursor: pointer;
     }
-  
-    .menu {
-      width: 32px;
-      height: 32px;
-      background-size: 100% 100%;
-    }
   }
   
+
+/* Menú hamburguesa (tablet) */
+@include tablet {
+  .custom_toggler {
+    width: 121px;
+    height: 32px;
+    
+  }
+     .menu_icon {
+    width: 32px; 
+    height: 32px; 
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+  }
+
+}
+
+
+
   /* Franjas superiores en tablet y mobile */
   @include tablet {
     .franja_superior,
@@ -74,8 +128,8 @@
     }
   }
   
-  /* Logo navbar en tablet y mobile */
-  @media (max-width: 991px) {
+  /* Logo navbar en mobile */
+  @include mobile {
     .logo_navbar {
       width: 79px;
       height: 27px;
@@ -85,10 +139,21 @@
       font-size: 0.8rem;
     }
   }
-  
+
+  /* Logo navbar en tablet */
+  @include tablet {
+  .logo_navbar {
+    width: 83px;
+    height: 31px;
+  }
+
+  .logo_subtitle {
+    font-size: 1,5rem;
+  }
+}
   /* -------------------------------------------------------- FOOTER -------------------------------------------------------- */
   
-  @media (max-width: 1024px) {
+  @include mobile {
     footer section {
       flex-wrap: wrap;
       justify-content: center;
@@ -125,12 +190,14 @@
       width: 70%;
       height: auto;
     }
-  
+     .redes {
+      
+    
     .icono-redes {
-      width: auto;
-      height: auto;
+      width: 24px !important;
+      height: 24px;
     }
-  
+    }
     footer h3 {
       font-size: 1rem;
     }
@@ -139,7 +206,41 @@
       font-size: 0.9rem;
     }
   }
+  @include tablet {
+  footer section {
+      flex-direction: column;
+    }
   
+    footer section div {
+      flex: 1 1 100%;
+      margin: 10px 0;
+    }
+  
+    footer section .bienestar img {
+      max-width: 80%;
+      margin-bottom: 10px;
+    }
+  
+    footer img {
+      width: 70%;
+      height: auto;
+    }
+     .redes {
+      
+    
+    .icono-redes {
+      width: auto;
+      height: auto;
+    }
+    }
+    footer h3 {
+      font-size: 1rem;
+    }
+  
+    footer p {
+      font-size: 0.9rem;
+    }
+  }
   /* --------------------------------------------------------  INICIO -------------------------------------------------------- */
   
   @include mobile {
@@ -241,7 +342,7 @@
     }
   }
   
-  @media (min-width: 601px) and (max-width: 1024px) {
+ @include tablet {
     .experiencia,
     .consultas,
     .os,
@@ -357,15 +458,22 @@
     }
   }
   
-  @include tablet {
-    .nuestro_equipo {
-      justify-content: center;
-    }
-  
-    .card {
-      max-width: 45%;
-    }
+@include tablet {
+  .nuestro_equipo {
+    display: flex;
+    flex-wrap: wrap !important; 
+    justify-content: space-around !important;
+    gap: 20px;
+    padding: 0 10px;
   }
+
+  .nuestro_equipo .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+}
+
   
  /*---------------------------------------------------TRATAMIENTOS-----------------------------------------------------------*/
 @include mobile {
@@ -402,7 +510,28 @@
       margin: 0% !important; 
       padding: 15px;
     }
+    h2.tratamientos {
+    font-size: 22px;
+    padding: 15PX;
+    }
+}
+@include tablet {
+  .tratamientos_section_grid {
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: space-around !important;
+    gap: 20px;
+    padding: 0 10px;
   }
+
+  .tratamientos_section_grid .card {
+    width: calc(50% - 10px); // 2 columnas
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+}
+
+
   
   
   /* ------------------------------------------------------OBRAS SOCIALES----------------------------------------------------------------- */
@@ -423,6 +552,17 @@
     .p_os,
     .p_negrita {
       font-size: 16px;
+    }
+
+    .contenedor_h2 {
+    justify-content: center;
+    padding-left: 0;
+
+    .h2_os {
+      text-align: center;
+      font-size: 22px;
+      padding: 10px;
+    }
     }
   
     .seccion_os {
@@ -447,9 +587,9 @@
   
     .logos_columna {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 15px;
-      width: 100%;
+      grid-template-columns: 1fr !important;
+      gap: 10px;
+      width: 90%;
       max-width: 90%;
       margin: 0 auto;
       justify-items: center;
@@ -464,6 +604,7 @@
         width: auto;
         max-width: 80%;
         height: auto;
+        margin-bottom: 20px !important;
       }
     }
   
@@ -483,12 +624,104 @@
       font-size: 16px !important;
     }
   }
+
+  @include tablet {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  .text_os {
+    h1 {
+      font-size: 30px !important;
+    }
+  }
+
+  .p_os,
+  .p_negrita {
+    font-size: 18px;
+    padding-right: 15px;
+    padding-right: 15px;
+  }
+
+  .contenedor_h2 {
+    justify-content: center !important;
+    
+
+    .h2_os {
+      text-align: center;
+      font-size: 24px;
+      padding: 5px;
+    }
+  }
+
+  .seccion_os {
+    text-align: center;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .detalle_columna {
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+
+  .logos_columna {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 5px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-items: center;
+  }
+
+      
+
+  .logo_os {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: auto;
+      max-width: 80%;
+      height: auto;
+    }
+  }
+
+  .button-container {
+    justify-content: center;
+    width: 100% ;
+    max-width: 100%;
+    padding-bottom: 10px;
+    margin: 0 auto ;
+  }
+
+  .boton_ver_mas {
+    margin: 0 auto ;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
   
   
   /*----------------------------------------------------------RESEÑAS--------------------------------------------------------------------*/
   @include mobile {
     .opiniones {
       font-size: 28px !important;
+      padding: 15px;
     }
   
     h2.name {
@@ -512,7 +745,33 @@
       width: 80%; 
     }
   }
+  @include tablet{
+    .opiniones {
+      font-size: 28px !important;
+    }
   
+    h2.name {
+      font-size: 22px;
+    }
+  
+    p.opinion {
+      font-size: 18px !important;
+    }
+  
+    .cards_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem; 
+    }
+  // Se utilizó  ".cards_container > div" para seleccionar todos los elementos div hijos 
+  //directos de un elemento con la clase ".cards_container".
+  //El símbolo > es el combinador de hijo directo. Es más específico que un selector descendiente.
+    .cards_container > div {
+      width: 80%; 
+    }
+  }
+
 /* ------------------------------------------------------OBRAS SOCIALES----------------------------------------------------------------- */
 
 @include mobile {
@@ -657,7 +916,7 @@ h1.gestion_turnos {
   #formulario {
     @include mobile {
       height: 100vh;
-      min-height: 100vh;
+      min-height: 100%;
       background-image: url('../assets/img_back_contacto.png');
       background-size: cover;
       background-position: center;
@@ -670,9 +929,9 @@ h1.gestion_turnos {
         text-align: center;
         align-items: center;
         background-color: $azul;
-        padding: 10px;
+        padding: 15px;
         margin-bottom: 20px;
-        margin-top: 20px;
+        margin-top: 5px;
         color: $blanco;
         border-radius: 5px 5px 0 0;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -721,7 +980,7 @@ h1.gestion_turnos {
           font-size: 1rem;
         }
         label[for="nombre"] {
-            margin-top: 30px;
+            margin-top: 40px;
           }
         .input_row_one,
         .input_row_two {
@@ -758,7 +1017,7 @@ h1.gestion_turnos {
           text-align: center;
           display: inline-block;
           line-height: 45px;
-          margin-top: 5px;
+          margin-top: 10px;
         }
       }
       .requisito_turno {
@@ -770,4 +1029,44 @@ h1.gestion_turnos {
     }
   }
   
-  
+ @include tablet {
+ 
+  #formulario {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px 10px 30px;
+
+    .titulo_form,
+    form {
+      width: 100%;
+      margin-right: 0;
+      align-items: center;
+      text-align: center;
+
+      h2, p {
+        text-align: center;
+        align-self: center;
+        margin-bottom: 10px;
+      }
+    }
+
+    form {
+      .input_row_one,
+      .input_row_two {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: nowrap;     
+        gap: 10px;
+        justify-content: center;
+      }
+
+     
+
+      input[type="submit"] {
+        align-self: flex-start;
+      }
+    }
+  }
+}
+
+ 

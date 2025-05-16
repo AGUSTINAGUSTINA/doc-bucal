@@ -16,7 +16,7 @@
     background-color:  #F6F1EE;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    width: 30%;
     padding: 20px;
     text-align: center;
     display: flex;
@@ -28,6 +28,7 @@
     img {
       width: 100px;
       height: auto;
+      align-self: flex-end;
     }
   }
   
@@ -56,7 +57,7 @@
     font-family: $public;
     font-weight: $light;
     font-size: 1rem;
-    color: darken($gris, 25%); 
+    color: black; 
     margin: 0;
   }
   

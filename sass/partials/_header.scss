@@ -114,7 +114,7 @@ de navegacion en mobile*/
         background-color: white;
         font-family: $public;
         font-size: 16px;
-        font-weight: bold;
+        font-weight: $semibold;
         color: $azul;
         text-decoration: none;
         border-radius: 19px;
@@ -171,4 +171,3 @@ de navegacion en mobile*/
       border: none;
     }
   }
-  

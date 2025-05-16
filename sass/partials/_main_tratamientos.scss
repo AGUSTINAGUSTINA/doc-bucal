@@ -3,71 +3,78 @@
 
 //Aquí utilicé Grid Layout, en el cual el área de la cuadrícula contiene 6 cards distribuidas en 3 columnas y 2 filas.
 h1.tratamientos {
-    font-family: $web;
-    font-size: 40px !important;
-    color: $azul;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    color: $azul;
-    font-weight: $bold;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.42);
-    text-align: center;
-  }
-  
+  font-family: $web;
+  font-size: 40px !important;
+  color: $azul;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-weight: $bold;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.42);
+  text-align: center;
+}
 
-  p.tratamientos {
-    font-size: 18px;
-    margin-left: 20px;
-    margin-bottom: 10px;
+p.tratamientos {
+  font-size: 18px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.titulo_tratamientos {
+  display: flex;
+  width: 100% !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 20px 0;
+
+  h2.tratamientos {
+    font-family: $web;
+    color: $azul;
     text-align: center;
-  }
-  
- 
-  .tratamientos_section_grid {
-    display: grid;
-    grid-template-areas: 
-      "card1 card2 card3"
-      "card4 card5 card6";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 15px;
-    max-width: 900px;
-    margin: 30px auto;
-  }
-   /*CARDS*/
-  .tratamientos_section_grid .card {
     width: 100%;
-    max-width: 330px;
-    height: 330px;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-    // Hover en la card
-    &:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-  
-    // Imagen dentro de la card
-    img {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 10px 10px 0 0;
-    }
-  
-    // Título h3 dentro de la card
-    h3 {
-      margin-top: 10px;
-      font-size: 1.2rem;
-      color: $azul;
-      font-weight: $bold;
-      font-family: $public;
-    }
   }
+}
+
+
+.tratamientos_section_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.tratamientos_section_grid .card {
+  width: 100%;
+  max-width: 330px;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+  padding: 10px;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  h3 {
+   margin-top: 18px;
+   font-size: 1.2rem;
+   color: $azul;
+   font-weight: $bold;
+   font-family: $public;
+  }
+}

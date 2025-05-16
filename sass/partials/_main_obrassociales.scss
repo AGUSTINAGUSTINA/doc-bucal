@@ -30,6 +30,19 @@
     margin-bottom: 0px 0px 10px;
     font-size: $size-p;
   }
+  .contenedor_h2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+  }
+
+   .h2_os {
+     text-align: left;
+     margin-left: 20px;
+   }
+
+
 }
 
 /* Contenedor */
@@ -38,6 +51,7 @@
   grid-template-columns: 1fr 1fr; 
   gap: 30px; 
   margin: 40px 0;
+  margin-left: 20px;
 
   .logos_columna {
     display: grid;
