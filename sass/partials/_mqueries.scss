@@ -153,9 +153,9 @@
 }
   /* -------------------------------------------------------- FOOTER -------------------------------------------------------- */
   
-  @include mobile {
+  @include desktop {
     footer section {
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       justify-content: center;
     }
   
@@ -460,10 +460,10 @@
   
 @include tablet {
   .nuestro_equipo {
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap !important; 
     justify-content: space-around !important;
-    gap: 20px;
+    gap: 40px !important;
     padding: 0 10px;
   }
 
@@ -525,7 +525,7 @@
   }
 
   .tratamientos_section_grid .card {
-    width: calc(50% - 10px); // 2 columnas
+    width: calc(50% - 10px); 
     margin-bottom: 20px;
     box-sizing: border-box;
   }
@@ -1069,4 +1069,24 @@ h1.gestion_turnos {
   }
 }
 
- 
+ /*-------------------------------------EXITO-----------------------------------------------------*/
+ @include mobile{
+ .success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1% 5% 1% 5%;
+  margin-top: 5px;
+   h1.exito {
+    color: $correcto;
+    font-weight: $bold;
+    font-size: 28px;
+  }
+   h2.exito{
+    color: $azul;
+    font-size: 22px;
+   }
+}
+ }
