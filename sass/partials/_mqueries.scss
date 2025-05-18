@@ -241,6 +241,23 @@
       font-size: 0.9rem;
     }
   }
+
+ /* --------------------------------------------------------  WHATSAPP -------------------------------------------------------- */
+@include tablet {
+  .floating-whatsapp img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@include mobile {
+  .floating-whatsapp img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
   /* --------------------------------------------------------  INICIO -------------------------------------------------------- */
   
   @include mobile {
