@@ -1274,16 +1274,22 @@ p.opinion {
   text-align: center;
   padding: 1% 5% 1% 5%;
   margin-top: 5px;
+  height: 100%;
+  margin-bottom: 47px;
 }
 .success-container h1.exito {
   color: #00A272;
   font-weight: 700;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.42);
 }
+.success-container h2.exito {
+  margin-bottom: 10px;
+}
 .success-container img {
   width: 28%;
   height: 28%;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 /*-----------------------FOOTER-------------------------------*/

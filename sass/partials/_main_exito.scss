@@ -8,6 +8,8 @@
     text-align: center;
     padding: 1% 5% 1% 5%;
     margin-top: 5px;
+    height: 100%;
+    margin-bottom: 47px;
 
     h1.exito {
         color: $correcto;
@@ -15,10 +17,15 @@
         text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.42);
     }
 
+    h2.exito {
+        margin-bottom: 10px;
+    }
+
     img {
         width: 28%;
         height: 28%;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
+        margin-top: 8px;
       
        
     }
