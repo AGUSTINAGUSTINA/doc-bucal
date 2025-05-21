@@ -1392,6 +1392,7 @@ footer .redes .iconos {
   flex-direction: row;
   gap: 10px;
   justify-content: center;
+  cursor: pointer;
 }
 footer .redes .iconos .icono-redes {
   width: 32px;
@@ -1917,6 +1918,15 @@ p.ortodoncia_main {
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
+  .content_container {
+    align-content: center;
+    margin-bottom: 10px;
+  }
+  .content_container .text {
+    text-align: center !important;
+    max-width: 100%;
+    width: 100%;
+  }
   .nuestro_equipo {
     display: flex !important;
     flex-wrap: wrap !important;
@@ -1928,6 +1938,9 @@ p.ortodoncia_main {
     width: calc(50% - 10px);
     margin-bottom: 20px;
     box-sizing: border-box;
+  }
+  .img_sobre_nosotros {
+    display: none !important;
   }
 }
 /*---------------------------------------------------TRATAMIENTOS-----------------------------------------------------------*/

@@ -502,6 +502,16 @@
   }
 
   @include tablet {
+    .content_container {
+      align-content: center;
+      margin-bottom: 10px;
+
+      .text {
+        text-align: center !important;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
     .nuestro_equipo {
       display: flex !important;
       flex-wrap: wrap !important;
@@ -514,6 +524,9 @@
       width: calc(50% - 10px);
       margin-bottom: 20px;
       box-sizing: border-box;
+    }
+     .img_sobre_nosotros {
+      display: none !important;
     }
   }
 
