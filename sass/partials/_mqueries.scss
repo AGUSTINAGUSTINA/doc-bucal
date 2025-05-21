@@ -5,136 +5,148 @@
 
 /* Desktop */
 @include desktop {
-    .navbar-nav {
-      justify-content: flex-end;
-    }
+  .navbar-nav {
+    justify-content: flex-end;
   }
-  
-  /* Mobile */
-  @include mobile {
-    .custom_navbar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    
-      .container_custom_navbar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    
-      .custom-navbar li a {
-        text-align: center;
-        justify-content: center;
-      }
-    
-      .custom_item {
-        text-align: center;
-        justify-content: center;
-      }
-    
-      .custom_links {
-        text-align: center;
-        justify-content: center;
-      }
-    
+}
 
-      .nav_turnos {
-        margin-top: 10px;
-        color: $blanco !important;             
-        background-color: $azul !important;    
-      }
-    }
-
-    
-  /* Tablet */
-  @include tablet{
+/* Mobile */
+@include mobile {
   .custom_navbar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    
-      .container_custom_navbar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    
-      .custom-navbar li a {
-        text-align: center;
-        justify-content: center;
-      }
-    
-      .custom_item {
-        text-align: center;
-        justify-content: center;
-      }
-    
-      .custom_links {
-        text-align: center;
-        justify-content: center;
-      }
-    
-
-      .nav_turnos {
-        
-        color: $blanco !important;             
-        background-color: $azul !important;    
-      }
-    }
-
-  /* Menú hamburguesa (mobile) */
-  @include mobile {
-    .menu_icon {
-      display: block;
-      cursor: pointer;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
 
-/* Menú hamburguesa (tablet) */
+  .container_custom_navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-navbar li a {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .custom_item {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .custom_links {
+    text-align: center;
+    justify-content: center;
+  }
+
+
+  .nav_turnos {
+    margin-top: 10px;
+    color: $blanco !important;
+    background-color: $azul !important;
+  }
+}
+
+
+/* Tablet */
 @include tablet {
+  .custom_navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container_custom_navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-navbar li a {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .custom_item {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .custom_links {
+    text-align: center;
+    justify-content: center;
+  }
+
+
+  .nav_turnos {
+
+    color: $blanco !important;
+    background-color: $azul !important;
+  }
+}
+
+/* Menú hamburguesa (mobile) */
+@include mobile {
+
   .custom_toggler {
     width: 121px;
     height: 32px;
-    
-  }
-     .menu_icon {
-    width: 32px; 
-    height: 32px; 
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-   
-  }
 
+    .menu_icon {
+      display: block;
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+
+    }
+  }
 }
+
+  /* Menú hamburguesa (tablet) */
+  @include tablet {
+    .custom_toggler {
+      width: 121px;
+      height: 32px;
+
+    }
+
+    .menu_icon {
+      width: 32px;
+      height: 32px;
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+
+  }
 
 
 
   /* Franjas superiores en tablet y mobile */
   @include tablet {
+
     .franja_superior,
     .franja_inferior {
       display: none;
     }
   }
-  @include mobile { 
+
+  @include mobile {
+
     .franja_superior,
     .franja_inferior {
       display: none;
     }
   }
-  
+
   /* Logo navbar en mobile */
   @include mobile {
     .logo_navbar {
       width: 79px;
       height: 27px;
     }
-  
+
     .logo_subtitle {
       font-size: 0.8rem;
     }
@@ -142,124 +154,130 @@
 
   /* Logo navbar en tablet */
   @include tablet {
-  .logo_navbar {
-    width: 83px;
-    height: 31px;
+    .logo_navbar {
+      width: 83px;
+      height: 31px;
+    }
+
+    .logo_subtitle {
+      font-size: 1, 5rem;
+    }
   }
 
-  .logo_subtitle {
-    font-size: 1,5rem;
-  }
-}
   /* -------------------------------------------------------- FOOTER -------------------------------------------------------- */
-  
+
   @include desktop {
     footer section {
       flex-wrap: nowrap;
       justify-content: center;
     }
-  
+
     footer section div {
       flex: 1 1 48%;
       margin: 10px;
     }
-  
+
     footer section .bienestar img {
       max-width: 100%;
       height: auto;
       width: auto;
     }
   }
-  
+
   @include mobile {
     footer section {
       flex-direction: column;
     }
-  
+
     footer section div {
       flex: 1 1 100%;
       margin: 10px 0;
     }
-  
+
     footer section .bienestar img {
       max-width: 80%;
       margin-bottom: 10px;
     }
-  
+
     footer img {
       width: 70%;
       height: auto;
     }
-     .redes {
-      
-    
-    .icono-redes {
-      width: 24px !important;
-      height: 24px;
+
+    .redes {
+
+
+      .icono-redes {
+        width: 24px !important;
+        height: 24px;
+      }
     }
-    }
+
     footer h3 {
       font-size: 1rem;
     }
-  
+
     footer p {
       font-size: 0.9rem;
     }
   }
+
   @include tablet {
-  footer section {
+    footer section {
       flex-direction: column;
     }
-  
+
     footer section div {
       flex: 1 1 100%;
       margin: 10px 0;
     }
-  
+
     footer section .bienestar img {
       max-width: 80%;
       margin-bottom: 10px;
     }
-  
+
     footer img {
       width: 70%;
       height: auto;
     }
-     .redes {
-      
-    
-    .icono-redes {
-      width: auto;
-      height: auto;
+
+    .redes {
+
+
+      .icono-redes {
+        width: auto;
+        height: auto;
+      }
     }
-    }
+
     footer h3 {
       font-size: 1rem;
     }
-  
+
     footer p {
       font-size: 0.9rem;
     }
   }
 
- /* --------------------------------------------------------  WHATSAPP -------------------------------------------------------- */
-@include tablet {
-  .floating-whatsapp img {
-    width: 45px;
-    height: 45px;
+  /* --------------------------------------------------------  WHATSAPP -------------------------------------------------------- */
+  @include tablet {
+    .floating-whatsapp img {
+      width: 45px;
+      height: 45px;
+    }
   }
-}
 
-@include mobile {
-  .floating-whatsapp img {
-    width: 40px;
-    height: 40px;
+  @include mobile {
+    .floating-whatsapp img {
+      width: 40px;
+      height: 40px;
+    }
   }
-}
 
 
   /* --------------------------------------------------------  INICIO -------------------------------------------------------- */
-  
+
   @include mobile {
     .bienvenida h1 {
       font-size: 28px !important;
@@ -267,20 +285,20 @@
       margin-left: 10px;
       margin-right: 10px;
     }
-  
+
     .carousel-caption-custom h2 {
       font-size: 16px;
       text-align: center;
       padding: 0 10px;
     }
-  
+
     .carousel-caption-custom p {
       font-size: 12px;
       text-align: center;
       margin-bottom: 5px;
       padding: 0 10px;
     }
-  
+
     .botones_container {
       display: flex;
       justify-content: center;
@@ -288,33 +306,36 @@
       margin-top: 5px;
       gap: 5px;
     }
-  
-    button {
+
+    #conoce_mas,
+    #agenda,
+    #nuestros_servicios,
+    #num_tel {
       font-size: 0.6rem !important;
       max-width: 150px;
       width: 121px !important;
       height: 32px !important;
     }
-  
+
     button.previo,
     button.siguiente {
       width: 24px !important;
       height: 24px !important;
     }
-  
+
     button.previo {
       left: 8px !important;
     }
-  
+
     button.siguiente {
       right: 8px !important;
     }
   }
-  
+
 
   /* INFO CARDS */
-  
-  
+
+
   @include mobile {
     .info_container {
       display: flex;
@@ -323,7 +344,7 @@
       text-align: center;
       padding: 0;
       margin: 0;
-  
+
       p {
         color: black;
         font-size: 16px !important;
@@ -331,11 +352,11 @@
         margin: 0 10px;
       }
     }
-  
+
     .info {
       justify-content: center;
     }
-  
+
     .experiencia,
     .consultas,
     .os,
@@ -345,21 +366,22 @@
       min-height: 180px;
       margin-bottom: 20px;
     }
-  
+
     .info h3 {
       font-size: 18px;
     }
-  
+
     .num {
       font-size: 48px;
     }
-  
+
     .dato {
       font-size: 16px;
     }
   }
-  
- @include tablet {
+
+  @include tablet {
+
     .experiencia,
     .consultas,
     .os,
@@ -368,132 +390,135 @@
       max-width: 48%;
     }
   }
-  
+
   /* -------------------------------------------------------- PREGUNTAS FRECUENTES  -------------------------------------------------------- */
-  
+
   @media (max-width: $tablet-max) {
     .container {
       max-width: 100%;
       padding: 10px;
     }
-  
+
     .faq_title {
       text-align: center;
       font-size: 22px;
     }
-  
+
     .faq_accordion {
       width: 100%;
       max-width: 100%;
       padding: 0 10px;
     }
-  
+
     .accordion-header,
     .faq_button {
       font-size: 16px !important;
       width: 100% !important;
     }
-  
+
     .faq_button {
       padding: 10px;
       white-space: normal;
       text-align: left;
       max-width: 100% !important;
     }
-  
+
     .faq_body {
       font-size: 16px;
       padding: 0.8rem;
     }
-  
+
     .contenedor_boton_faq {
       margin-top: 15px;
     }
-  
+
     .ver_mas_faq {
       font-size: 16px !important;
       padding: 8px 16px;
       height: auto;
     }
   }
-  
+
   /* ------------------------------------------------------ SOBRE NOSOTROS -------------------------------------------------------- */
-  
+
   @include mobile {
-  .content_container{ 
-   align-content: center;
-   margin-bottom: 10px;
-    .text {
-      text-align: center !important;
-      max-width: 100%;
-      width: 100%;
-  
-      h1 {
-        font-size: 28px !important;
-       
-      }
-  
-      h2 {
-        font-size: 22px;
-        margin: 0%;
-      }
-  
-      p {
-        font-size: 16px;
-        margin: 0%;
-        padding: 10px;
+    .content_container {
+      align-content: center;
+      margin-bottom: 10px;
+
+      .text {
+        text-align: center !important;
+        max-width: 100%;
+        width: 100%;
+
+        h1 {
+          font-size: 28px !important;
+
+        }
+
+        h2 {
+          font-size: 22px;
+          margin: 0%;
+        }
+
+        p {
+          font-size: 16px;
+          margin: 0%;
+          padding: 10px;
+        }
       }
     }
-}
+
     .equipo h2 {
       font-size: 22px;
     }
-  
+
     .card-body {
       .nombre {
         font-size: 1rem;
       }
-  
+
       .especialidad {
         font-size: 0.875rem;
       }
     }
-/*NUESTRO EQUIPO*/  
+
+    /*NUESTRO EQUIPO*/
     .nuestro_equipo {
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
-  
+
     .card {
       width: 80%;
       margin-bottom: 20px;
     }
- /* Se oculta la imagen en mobile */
+
+    /* Se oculta la imagen en mobile */
     .img_sobre_nosotros {
       display: none !important;
     }
   }
-  
-@include tablet {
-  .nuestro_equipo {
-    display: flex !important;
-    flex-wrap: wrap !important; 
-    justify-content: space-around !important;
-    gap: 40px !important;
-    padding: 0 10px;
+
+  @include tablet {
+    .nuestro_equipo {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: space-around !important;
+      gap: 40px !important;
+      padding: 0 10px;
+    }
+
+    .nuestro_equipo .card {
+      width: calc(50% - 10px);
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
   }
 
-  .nuestro_equipo .card {
-    width: calc(50% - 10px);
-    margin-bottom: 20px;
-    box-sizing: border-box;
-  }
-}
-
-  
- /*---------------------------------------------------TRATAMIENTOS-----------------------------------------------------------*/
-@include mobile {
+  /*---------------------------------------------------TRATAMIENTOS-----------------------------------------------------------*/
+  @include mobile {
     .tratamientos_section_grid {
       grid-template-columns: 1fr;
       grid-template-areas:
@@ -504,84 +529,88 @@
         "card5"
         "card6";
       justify-items: center;
-  
+
       .card {
         width: 80%;
-  
+
         &:hover {
           transform: none;
         }
-  
+
         h3 {
           font-size: 18px;
         }
       }
     }
-  
+
     h1.tratamientos {
       font-size: 28px !important;
+      padding: 10px;
     }
-  
+
     p.tratamientos {
       font-size: 16px;
-      margin: 0% !important; 
+      margin: 0% !important;
       padding: 15px;
     }
+
     h2.tratamientos {
-    font-size: 22px;
-    padding: 15PX;
+      font-size: 22px;
+      padding: 15PX;
     }
-}
-@include tablet {
-  .tratamientos_section_grid {
-    display: flex;
-    flex-wrap: wrap !important;
-    justify-content: space-around !important;
-    gap: 20px;
-    padding: 0 10px;
   }
 
-  .tratamientos_section_grid .card {
-    width: calc(50% - 10px); 
-    margin-bottom: 20px;
-    box-sizing: border-box;
+  @include tablet {
+    .tratamientos_section_grid {
+      display: flex;
+      flex-wrap: wrap !important;
+      justify-content: space-around !important;
+      gap: 20px;
+      padding: 0 10px;
+    }
+
+    .tratamientos_section_grid .card {
+      width: calc(50% - 10px);
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
   }
-}
 
 
-  
-  
+
+
   /* ------------------------------------------------------OBRAS SOCIALES----------------------------------------------------------------- */
   @include mobile {
     body {
-        overflow-x: hidden;
-      }
-      
+      overflow-x: hidden;
+    }
+
     html {
-        overflow-x: hidden;
-      }
+      overflow-x: hidden;
+    }
+
     .text_os {
       h1 {
         font-size: 28px !important;
       }
     }
-  
+
     .p_os,
     .p_negrita {
       font-size: 16px;
     }
 
     .contenedor_h2 {
-    justify-content: center;
-    padding-left: 0;
+      justify-content: center;
+      padding-left: 0;
 
-    .h2_os {
-      text-align: center;
-      font-size: 22px;
-      padding: 10px;
+      .h2_os {
+        text-align: center;
+        font-size: 22px;
+        padding: 10px;
+      }
     }
-    }
-  
+
     .seccion_os {
       text-align: center;
       width: 100%;
@@ -593,7 +622,7 @@
       height: 100%;
 
     }
-  
+
     .detalle_columna {
       display: none;
       visibility: hidden;
@@ -601,7 +630,7 @@
       height: 0;
       position: absolute;
     }
-  
+
     .logos_columna {
       display: grid;
       grid-template-columns: 1fr !important;
@@ -611,12 +640,12 @@
       margin: 0 auto;
       justify-items: center;
     }
-  
+
     .logo_os {
       display: flex;
       justify-content: center;
       align-items: center;
-  
+
       img {
         width: auto;
         max-width: 80%;
@@ -624,7 +653,7 @@
         margin-bottom: 20px !important;
       }
     }
-  
+
     .button-container {
       justify-content: center !important;
       width: 100% !important;
@@ -632,7 +661,7 @@
       padding: 0 !important;
       margin: 0 auto !important;
     }
-  
+
     .boton_ver_mas {
       margin: 0 auto !important;
       width: 100%;
@@ -643,172 +672,176 @@
   }
 
   @include tablet {
-  body,
-  html {
-    overflow-x: hidden;
-  }
 
-  .text_os {
-    h1 {
-      font-size: 30px !important;
+    body,
+    html {
+      overflow-x: hidden;
     }
-  }
 
-  .p_os,
-  .p_negrita {
-    font-size: 18px;
-    padding-right: 15px;
-    padding-right: 15px;
-  }
+    .text_os {
+      h1 {
+        font-size: 30px !important;
+      }
+    }
 
-  .contenedor_h2 {
-    justify-content: center !important;
-    
+    .p_os,
+    .p_negrita {
+      font-size: 18px;
+      padding-right: 15px;
+      padding-right: 15px;
+    }
 
-    .h2_os {
+    .contenedor_h2 {
+      justify-content: center !important;
+
+
+      .h2_os {
+        text-align: center;
+        font-size: 24px;
+        padding: 5px;
+      }
+    }
+
+    .seccion_os {
       text-align: center;
-      font-size: 24px;
-      padding: 5px;
+      width: 100%;
+      padding: 0 !important;
+      margin: 0 !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100%;
+    }
+
+    .detalle_columna {
+      display: none;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      position: absolute;
+    }
+
+    .logos_columna {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      justify-items: center;
+    }
+
+
+
+    .logo_os {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: auto;
+        max-width: 80%;
+        height: auto;
+      }
+    }
+
+    .button-container {
+      justify-content: center;
+      width: 100%;
+      max-width: 100%;
+      padding-bottom: 10px;
+      margin: 0 auto;
+    }
+
+    .boton_ver_mas {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      font-size: 16px;
     }
   }
 
-  .seccion_os {
-    text-align: center;
-    width: 100%;
-    padding: 0 !important;
-    margin: 0 !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
-  }
 
-  .detalle_columna {
-    display: none;
-    visibility: hidden;
-    width: 0;
-    height: 0;
-    position: absolute;
-  }
 
-  .logos_columna {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);  
-    gap: 5px;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    justify-items: center;
-  }
-
-      
-
-  .logo_os {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-      width: auto;
-      max-width: 80%;
-      height: auto;
-    }
-  }
-
-  .button-container {
-    justify-content: center;
-    width: 100% ;
-    max-width: 100%;
-    padding-bottom: 10px;
-    margin: 0 auto ;
-  }
-
-  .boton_ver_mas {
-    margin: 0 auto ;
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-    font-size: 16px;
-  }
-}
-
-  
-  
   /*----------------------------------------------------------RESEÑAS--------------------------------------------------------------------*/
   @include mobile {
     .opiniones {
       font-size: 28px !important;
       padding: 15px;
     }
-  
+
     h2.name {
       font-size: 22px;
     }
-  
+
     p.opinion {
       font-size: 14px;
     }
-  
+
     .cards_container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1.5rem; 
+      gap: 1.5rem;
     }
-  // Se utilizó  ".cards_container > div" para seleccionar todos los elementos div hijos 
-  //directos de un elemento con la clase ".cards_container".
-  //El símbolo > es el combinador de hijo directo. Es más específico que un selector descendiente.
-    .cards_container > div {
-      width: 80%; 
+
+    // Se utilizó  ".cards_container > div" para seleccionar todos los elementos div hijos 
+    //directos de un elemento con la clase ".cards_container".
+    //El símbolo > es el combinador de hijo directo. Es más específico que un selector descendiente.
+    .cards_container>div {
+      width: 80%;
     }
   }
-  @include tablet{
+
+  @include tablet {
     .opiniones {
       font-size: 28px !important;
     }
-  
+
     h2.name {
       font-size: 22px;
     }
-  
+
     p.opinion {
       font-size: 18px !important;
     }
-  
+
     .cards_container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1.5rem; 
+      gap: 1.5rem;
     }
-  // Se utilizó  ".cards_container > div" para seleccionar todos los elementos div hijos 
-  //directos de un elemento con la clase ".cards_container".
-  //El símbolo > es el combinador de hijo directo. Es más específico que un selector descendiente.
-    .cards_container > div {
-      width: 80%; 
+
+    // Se utilizó  ".cards_container > div" para seleccionar todos los elementos div hijos 
+    //directos de un elemento con la clase ".cards_container".
+    //El símbolo > es el combinador de hijo directo. Es más específico que un selector descendiente.
+    .cards_container>div {
+      width: 80%;
     }
   }
 
-/* ------------------------------------------------------OBRAS SOCIALES----------------------------------------------------------------- */
+  /* ------------------------------------------------------OBRAS SOCIALES----------------------------------------------------------------- */
 
-@include mobile {
+  @include mobile {
     .text_os h1 {
       font-size: 28px !important;
       width: 90%;
     }
-  
+
     .p_os {
       font-size: 16px !important;
       padding: 10px;
       width: 90%;
     }
-  
+
     .p_negrita {
       font-size: 16px !important;
       padding: 10px;
       width: 90%;
     }
-  
+
     .seccion_os {
       text-align: center;
       width: 100%;
@@ -818,9 +851,9 @@
       flex-direction: column;
       justify-content: flex-start;
       height: 100%;
-      
 
-      > div {
+
+      >div {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -829,7 +862,7 @@
         margin: 0%;
       }
     }
-  
+
     .detalle_columna {
       display: none;
       visibility: hidden;
@@ -837,7 +870,7 @@
       height: 0;
       position: absolute;
     }
-  
+
     .logos_columna {
       display: grid;
       grid-template-columns: 1fr !important;
@@ -847,12 +880,12 @@
       margin: 0 auto;
       justify-items: center;
     }
-  
+
     .logo_os {
       display: flex;
       justify-content: center;
       align-items: center;
-  
+
       img {
         width: auto;
         max-width: 80%;
@@ -860,7 +893,7 @@
         display: block;
       }
     }
-  
+
     .button-container {
       justify-content: center !important;
       width: 100% !important;
@@ -869,7 +902,7 @@
       margin: 0 auto !important;
       margin-bottom: 20px !important;
     }
-  
+
     .boton_ver_mas {
       margin: 0 auto !important;
       width: 100%;
@@ -879,48 +912,50 @@
       margin-bottom: 20px;
     }
   }
-/*------------------------------------------------------------TURNOS----------------------------------------------------------------------*/
-h1.gestion_turnos {
-  @include mobile {
-    font-size: 28px !important;
-    text-align: center;
+
+  /*------------------------------------------------------------TURNOS----------------------------------------------------------------------*/
+  h1.gestion_turnos {
+    @include mobile {
+      font-size: 28px !important;
+      text-align: center;
+    }
   }
-}
+
   .agendamos_turno {
     @include mobile {
       .img_turno {
         display: none !important;
       }
-  
+
       .info_contacto {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
         margin-left: 15px !important;
-  
+
         h2 {
           margin-top: 10px;
           margin-bottom: 10px;
           font-size: 22px !important;
         }
-  
+
         p {
           font-size: 16px;
         }
-  
+
         .contacto_negrita {
           font-family: $public;
           font-size: 16px;
           font-weight: $bold;
           color: $azul;
         }
-  
+
         .vector_telefono img {
           width: 20px;
           height: 20px;
         }
-  
+
         .vector_whatsapp img,
         .vector_mail img {
           width: 30px;
@@ -929,7 +964,7 @@ h1.gestion_turnos {
       }
     }
   }
-  
+
   #formulario {
     @include mobile {
       height: 100vh;
@@ -940,7 +975,7 @@ h1.gestion_turnos {
       display: flex;
       justify-content: center;
       overflow: hidden;
-  
+
       .titulo_form {
         width: 80%;
         text-align: center;
@@ -956,7 +991,7 @@ h1.gestion_turnos {
         top: 0;
         display: flex;
         z-index: 10;
-  
+
         h2 {
           width: 100%;
           font-size: 1.5rem;
@@ -966,12 +1001,12 @@ h1.gestion_turnos {
           font-weight: $bold;
           text-align: center;
         }
-  
+
         p {
           display: none;
         }
       }
-  
+
       form {
         width: 90vh;
         max-height: 90vh;
@@ -987,8 +1022,8 @@ h1.gestion_turnos {
         flex-direction: column;
         justify-content: flex-start;
         margin-top: 0;
-        
-  
+
+
         label {
           margin-top: 5px;
           color: gray !important;
@@ -996,9 +1031,11 @@ h1.gestion_turnos {
           text-align: left;
           font-size: 1rem;
         }
+
         label[for="nombre"] {
-            margin-top: 40px;
-          }
+          margin-top: 40px;
+        }
+
         .input_row_one,
         .input_row_two {
           display: flex;
@@ -1006,21 +1043,21 @@ h1.gestion_turnos {
           gap: 10px;
           width: 100%;
         }
-  
+
         .input_group {
           display: flex;
           flex-direction: column;
           width: 100%;
         }
-  
+
         input,
         select,
         textarea {
           width: 100%;
           margin-top: 5px;
         }
-        
-  
+
+
         input[type="submit"] {
           background-color: $azul;
           color: $blanco;
@@ -1037,73 +1074,142 @@ h1.gestion_turnos {
           margin-top: 10px;
         }
       }
+
       .requisito_turno {
         @include mobile {
           display: none;
         }
       }
-      
+
     }
   }
-  
- @include tablet {
- 
-  #formulario {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 30px 10px 30px;
 
-    .titulo_form,
-    form {
-      width: 100%;
-      margin-right: 0;
+  @include tablet {
+
+    #formulario {
+      flex-direction: column;
       align-items: center;
-      text-align: center;
+      padding: 15px 30px 10px 30px;
 
-      h2, p {
+      .titulo_form,
+      form {
+        width: 100%;
+        margin-right: 0;
+        align-items: center;
         text-align: center;
-        align-self: center;
-        margin-bottom: 10px;
-      }
-    }
 
-    form {
-      .input_row_one,
-      .input_row_two {
-        display: flex;
-        flex-direction: row; 
-        flex-wrap: nowrap;     
-        gap: 10px;
-        justify-content: center;
+        h2,
+        p {
+          text-align: center;
+          align-self: center;
+          margin-bottom: 10px;
+        }
       }
 
-     
+      form {
 
-      input[type="submit"] {
-        align-self: flex-start;
+        .input_row_one,
+        .input_row_two {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          gap: 10px;
+          justify-content: center;
+        }
+
+
+
+        input[type="submit"] {
+          align-self: flex-start;
+        }
       }
     }
   }
-}
 
- /*-------------------------------------EXITO-----------------------------------------------------*/
- @include mobile{
- .success-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1% 5% 1% 5%;
-  margin-top: 5px;
-   h1.exito {
-    color: $correcto;
-    font-weight: $bold;
-    font-size: 28px;
+  /*-------------------------------------EXITO-----------------------------------------------------*/
+  @include mobile {
+    .success-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1% 5% 1% 5%;
+      margin-top: 5px;
+
+      h1.exito {
+        color: $correcto;
+        font-weight: $bold;
+        font-size: 28px;
+      }
+
+      h2.exito {
+        color: $azul;
+        font-size: 22px;
+      }
+    }
   }
-   h2.exito{
-    color: $azul;
-    font-size: 22px;
-   }
-}
- }
+
+
+  /*-------------------------------------ORTODONCIA-----------------------------------------------------*/
+  @include mobile {
+
+    h1.ortodoncia {
+      font-size: 28px;
+      padding: 2%;
+    }
+
+    h2.ortodoncia {
+      font-size: 22px;
+      padding: 2%;
+    }
+
+    p.ortodoncia,
+    p.ortodoncia_main,
+    .cuidados-texto_ortodoncia p {
+      font-size: 16px;
+      padding: 3%;
+    }
+
+    .ortodoncia-img {
+      display: none !important;
+    }
+  }
+
+  @include tablet {
+    .ortodoncia-img {
+      display: none !important;
+    }
+  }
+
+
+  /*-------------------------------------BLANQUEAMIENTO-----------------------------------------------------*/
+  @include mobile {
+
+    h1.blanqueamiento {
+      font-size: 28px;
+      padding: 2%;
+    }
+
+    h2.blanqueamiento {
+      font-size: 22px;
+      padding: 2%;
+    }
+
+    p.blanqueamiento,
+    p.blanqueamiento_main,
+    .cuidados-texto p {
+      font-size: 16px;
+      padding: 3%;
+    }
+
+    .cuidados-img {
+      display: none !important;
+    }
+  }
+
+  @include tablet {
+    .cuidados-img {
+      display: none !important;
+    }
+  }

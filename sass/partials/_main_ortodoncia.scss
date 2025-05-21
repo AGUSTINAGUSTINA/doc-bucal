@@ -1,0 +1,73 @@
+@use 'variables' as *;
+
+.ortodoncia-container {
+  display: flex;
+  flex-direction: column;  
+  padding: 2%;
+  margin-top: 5px;
+  height: 100%;
+  
+
+  h1.ortodoncia {
+    color: $azul;
+    font-weight: $bold;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.42);
+    text-align: center;
+  }
+
+  p.ortodoncia {
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 0% 3% 0% 3%;
+  }
+  
+  img {
+    width: 80%;
+    height: auto;
+    margin: 8px auto; 
+    display: block;
+  }
+}
+  h2.ortodoncia {
+    text-align: left;
+    margin: 5px 2px 5px 5px !important;
+    padding: 1% 2% 1% 2%;
+  }
+  p.ortodoncia_main{
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 1% 2% 1% 2%;
+  }
+  
+  .cuidados_ortodoncia {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 20px;
+  padding: 1%;
+
+  .cuidados-texto_ortodoncia {
+    flex: 1;
+    p {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+      padding: 1% 2% 1% 2%;
+    }
+  }
+
+  .ortodoncia-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+  }

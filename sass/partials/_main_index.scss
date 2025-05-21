@@ -162,41 +162,54 @@
   }
   
  /* BOTÓN "Conocé más"*/
-  #conoce_mas {
-    font-family: $public;
-    width: 200px;
-    height: 42px;
-    font-size: 16px;
-    border-radius: 19px;
-    border: 2px solid white;
-    background-color: $azul;
-    color: white;
-  
-    &:hover {
-      background-color: $grisaceo;
-      color: #213555;
-      border: 2px solid $azul;
-    }
+#conoce_mas {
+  font-family: $public;
+  width: 200px;
+  height: 42px;
+  font-size: 16px;
+  border-radius: 19px;
+  border: 2px solid white;
+  background-color: $azul;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $grisaceo;
+    color: #213555;
+    border: 2px solid $azul;
   }
+}
+
   
+
+
   /* BOTÓN "Agendá tu consulta"*/
   #agenda {
-    font-family: $public;
-    width: 200px;
-    height: 42px;
-    font-size: 16px;
-    border-radius: 19px;
-    background-color: $azul;
-    border: 2px solid white;
-    color: white;
-  
-    &:hover {
-      background-color: #B7C4DA;
-      color: $azul;
-      border: 2px solid $azul;
-    }
+  font-family: $public;
+  width: 200px;
+  height: 42px;
+  font-size: 16px;
+  border-radius: 19px;
+  background-color: $azul;
+  border: 2px solid white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #B7C4DA;
+    color: $azul;
+    border: 2px solid $azul;
   }
-  
+}
+
  /*SECCIÓN INFO*/
   .info_container {
     width: 90%;

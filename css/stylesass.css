@@ -435,6 +435,11 @@ button.siguiente .custom {
   border: 2px solid white;
   background-color: #213555;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 #conoce_mas:hover {
   background-color: #B7C4DA;
@@ -452,6 +457,11 @@ button.siguiente .custom {
   background-color: #213555;
   border: 2px solid white;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 #agenda:hover {
   background-color: #B7C4DA;
@@ -1387,6 +1397,136 @@ footer .redes .iconos .icono-redes {
   width: 32px;
 }
 
+.blanqueamiento-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  margin-top: 5px;
+  height: 100%;
+}
+.blanqueamiento-container h1.blanqueamiento {
+  color: #213555;
+  font-weight: 700;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.42);
+  text-align: center;
+}
+.blanqueamiento-container p.blanqueamiento {
+  text-align: left;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.blanqueamiento-container img {
+  width: 50%;
+  height: auto;
+  margin: 8px auto;
+  display: block;
+}
+
+h2.blanqueamiento {
+  text-align: left;
+  margin: 5px 2px 5px 5px !important;
+  padding: 1% 2% 1% 2%;
+}
+
+p.blanqueamiento_main {
+  text-align: left;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 1% 2% 1% 2%;
+}
+
+.cuidados {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 20px;
+  padding: 1%;
+}
+.cuidados .cuidados-texto {
+  flex: 1;
+}
+.cuidados .cuidados-texto p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  padding: 1% 2% 1% 2%;
+}
+.cuidados .cuidados-img {
+  flex-shrink: 0;
+}
+.cuidados .cuidados-img img {
+  width: 90%;
+  height: 90%;
+  border-radius: 8px;
+}
+
+.ortodoncia-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  margin-top: 5px;
+  height: 100%;
+}
+.ortodoncia-container h1.ortodoncia {
+  color: #213555;
+  font-weight: 700;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.42);
+  text-align: center;
+}
+.ortodoncia-container p.ortodoncia {
+  text-align: left;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 0% 3% 0% 3%;
+}
+.ortodoncia-container img {
+  width: 80%;
+  height: auto;
+  margin: 8px auto;
+  display: block;
+}
+
+h2.ortodoncia {
+  text-align: left;
+  margin: 5px 2px 5px 5px !important;
+  padding: 1% 2% 1% 2%;
+}
+
+p.ortodoncia_main {
+  text-align: left;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 1% 2% 1% 2%;
+}
+
+.cuidados_ortodoncia {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 20px;
+  padding: 1%;
+}
+.cuidados_ortodoncia .cuidados-texto_ortodoncia {
+  flex: 1;
+}
+.cuidados_ortodoncia .cuidados-texto_ortodoncia p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  padding: 1% 2% 1% 2%;
+}
+.cuidados_ortodoncia .ortodoncia-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cuidados_ortodoncia .ortodoncia-img img {
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+}
+
 /* -------------------------------------------------------- BARRA DE NAVEGACIÓN  -------------------------------------------------------- */
 /* Desktop */
 @media (min-width: 1025px) {
@@ -1455,9 +1595,15 @@ footer .redes .iconos .icono-redes {
 }
 /* Menú hamburguesa (mobile) */
 @media (max-width: 575px) {
-  .menu_icon {
+  .custom_toggler {
+    width: 121px;
+    height: 32px;
+  }
+  .custom_toggler .menu_icon {
     display: block;
     cursor: pointer;
+    width: 24px;
+    height: 24px;
   }
 }
 /* Menú hamburguesa (tablet) */
@@ -1616,7 +1762,10 @@ footer .redes .iconos .icono-redes {
     margin-top: 5px;
     gap: 5px;
   }
-  button {
+  #conoce_mas,
+  #agenda,
+  #nuestros_servicios,
+  #num_tel {
     font-size: 0.6rem !important;
     max-width: 150px;
     width: 121px !important;
@@ -1799,6 +1948,7 @@ footer .redes .iconos .icono-redes {
   }
   h1.tratamientos {
     font-size: 28px !important;
+    padding: 10px;
   }
   p.tratamientos {
     font-size: 16px;
@@ -2255,7 +2405,8 @@ footer .redes .iconos .icono-redes {
     align-items: center;
     text-align: center;
   }
-  #formulario .titulo_form h2, #formulario .titulo_form p,
+  #formulario .titulo_form h2,
+  #formulario .titulo_form p,
   #formulario form h2,
   #formulario form p {
     text-align: center;
@@ -2293,6 +2444,56 @@ footer .redes .iconos .icono-redes {
   .success-container h2.exito {
     color: #213555;
     font-size: 22px;
+  }
+}
+/*-------------------------------------ORTODONCIA-----------------------------------------------------*/
+@media (max-width: 575px) {
+  h1.ortodoncia {
+    font-size: 28px;
+    padding: 2%;
+  }
+  h2.ortodoncia {
+    font-size: 22px;
+    padding: 2%;
+  }
+  p.ortodoncia,
+  p.ortodoncia_main,
+  .cuidados-texto_ortodoncia p {
+    font-size: 16px;
+    padding: 3%;
+  }
+  .ortodoncia-img {
+    display: none !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .ortodoncia-img {
+    display: none !important;
+  }
+}
+/*-------------------------------------BLANQUEAMIENTO-----------------------------------------------------*/
+@media (max-width: 575px) {
+  h1.blanqueamiento {
+    font-size: 28px;
+    padding: 2%;
+  }
+  h2.blanqueamiento {
+    font-size: 22px;
+    padding: 2%;
+  }
+  p.blanqueamiento,
+  p.blanqueamiento_main,
+  .cuidados-texto p {
+    font-size: 16px;
+    padding: 3%;
+  }
+  .cuidados-img {
+    display: none !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .cuidados-img {
+    display: none !important;
   }
 }
 
